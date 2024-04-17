@@ -1,0 +1,102 @@
+.premium{
+    padding: var(--app-block-padding);
+    background-color: #1D75DE;
+    min-height: calc(480 - 30px);
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.title{
+    font-size: 2.438rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.description{
+    font-size: 1.5rem;
+}
+
+.term{
+    font-size: 14px;
+    
+}
+
+.term a{
+    text-decoration: underline;
+    color:#ffffff;
+}
+
+.btngroup{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    
+}
+
+@media (max-width:500px){
+    .btngroup{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        
+       
+    }
+
+    .title{
+        font-size: 2rem;
+    
+    }
+    
+    .description{
+        font-size: 1rem;
+    }
+  
+}
+
+.Btn{
+    background-color: rgb(240, 12, 12);
+    color: #fff;
+    padding: 16px 35px;
+    
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-transform: uppercase;
+ 
+  }
+ 
+  .transparentbtn{
+    background-color: transparent;
+    border:3px solid #fff;
+    color: #fff;
+    padding: 16px 35px;
+    /* border: none; */
+    border-radius: 500px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-transform: uppercase;
+ }
+
+ 
+ @media (max-width:500px){
+  .blackbtn .transparentbtn{
+      padding: 10px 20px;
+      text-wrap: nowrap;
+      
+  }
+
+}

@@ -1,0 +1,87 @@
+body{
+  padding: 50px;
+}
+.container {
+  justify-content: center;
+  
+  margin-top: 100px;
+  align-items: center;
+  margin-left: 500px;
+
+}
+.formgroup
+{
+    margin-left: -250px;
+}
+.formgroupc{
+    margin-top: 10px;
+}
+.formgroupc input{
+    width: 20px;
+    height: 20px;
+    margin-left: -180px;
+}
+
+.formgroupb{
+    margin-left: -250px;
+}
+.label,
+.labelpassword{
+  color: #490f09; 
+}
+.labelpassword{
+  margin-top: 10px;
+}
+input{
+    margin-left: -300px;
+    height: 40px;
+    width: 395px;
+    border: 1px solid #d2d9e2;
+}
+.forget{
+    display: flex;
+    
+}
+
+.heading{
+    justify-content: center;
+    color: #490f09;
+}
+
+button:hover {
+  background-color: #d2d9e2;
+}
+
+.forgotpassword {
+  margin-top: 15px;
+  margin-left: -200px;
+  cursor: pointer;
+  
+}
+.primarybutton {
+  margin-top: 70px;
+  background-color: #f53c1f;
+  color: #fff;
+  width: 200px;
+  height: 44px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-left: -380px;
+}
+
+.primarybutton:hover{
+  background-color:rgb(240, 12, 12) ;
+  
+}
+.para{
+    justify-content: start;
+    margin-top:10px;
+    margin-left: -560px;
+}
+.para a{
+  color: #f53c1f;
+  font-weight: lighter;
+}

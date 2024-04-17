@@ -1,0 +1,57 @@
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #460c06;
+}
+.heading{
+  padding: 10px 10px;
+  
+}
+.span{
+  margin-top: -10px;
+  font-weight: bold;
+}
+.paragraph{
+  margin-top: 25px;
+  color: #f75c44;
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+.label{
+  color: #460c06;
+
+  
+  
+}
+.box{
+  margin-left: 35px;
+  margin-bottom: 20px;
+  border: 1px solid #d6bcbc;
+  border-radius: 5px;
+}
+.primarybutton {
+  
+  background-color: #f53c1f;
+  color: #fff;
+  width: 400px;
+  height: 40px;
+  margin-left: 28px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.primarybutton :hover{
+  background-color: #f53c1f;
+}
+.para {
+  color: #460c06;
+}
+.para a{
+  color: #f53c1f;
+  font-weight: lighter;
+}
