@@ -2,16 +2,17 @@ import './App.css';
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import  VerifyWithOTP from "./component/Pages/Verify/Verify";
 import LoginPage from './component/Pages/Login/Login';
+import { LandingPage } from "./component/Pages/LandingPage/LandingPage";
 import { SignupPage } from './component/Pages/Signup';
 import { IsProtectedRoute } from './hoc/IsProtectedRoute';
 import { SideNav } from './component/SideNav/SideNavigation';
 
 
 const router = createBrowserRouter([
-  // { 
-  //   path: '/',
-  //   element: <LandingPage />
-  // },
+  { 
+    path: 'landingpage',
+    element: <LandingPage />
+  },
   { 
     path: 'signup',
     element: <SignupPage />
@@ -29,8 +30,8 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: '*',
-    element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
+    // path: '*',
+    // element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
   }
 ])
 

@@ -1,0 +1,54 @@
+.cardDiv{
+    background-color: #FBF7F0;
+    padding: 50px;
+     
+}
+
+.cardDiv h6{
+    display: flex;
+    justify-content: center;
+    font-family:" Montserrat" sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+.cardContainer{
+    display: flex;
+}
+
+.cardContainer > div {
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+.cardContainer img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-left: 150px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.description{
+color: #000;
+text-align: center;
+margin-top: 20px;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%;
+}
+ .name{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
