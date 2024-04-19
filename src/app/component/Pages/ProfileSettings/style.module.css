@@ -1,0 +1,12 @@
+header {
+    padding: var(--app-header-padding);
+}
+.content {
+    background-color: #FBFEF9;
+}
+.form-container {
+    background-color: #FBF7F0;
+}
+.update { 
+    background-color: #F44322;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+section {
+    background-color: #FFFFFF;
+}
+header {
+    padding: var(--app-header-padding);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.container {
+    background-color: #FBFEF9;
+    width: 725px;
+    height: 702px;
+    top: 161px;
+    left: 95px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.container h2 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    color: #310D07;
+}
+/* .form-input {
+    width: 387px;
+    height: 352px;
+    top: 96px;
+    left: 169px;
+    gap: 24px;
+    border: 1px solid salmon;
+    overflow: hidden;  
+} */
+.container input {
+    margin-left: 0px;
+}
+.form-input input {
+    width: 387px;
+    height: 45px;
+    gap: 8px;
+
+    padding: 16px 8px 16px 8px;
+    border-radius: 4px;
+    border: 1px solid #464646;
+}
+.form-input label, .check label {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    color: #222222;
+
+}
+.container .check input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+.check {
+    display: flex;
+    gap: 5px;
+}
+.check label {
+    padding-top: 3px;
+    width: 314px;
+    height: 17px;
+    color: #000000;
+}
+.check label a, .login a {
+    text-decoration: none;
+    color: #F44322;
+}
+.create {
+    width: 180px;
+    height: 54px;
+    top: 550px;
+    left: 266px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: #F44322;
+    border: none;
+    color: #FFFFFF;
+    margin-left: 100px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+}
+.create:hover {
+    background-color:rgb(240, 12, 12);
+}
+.login {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+}
+.preview {
+    width: 434.69px;
+    height: 325px;
+    top: 357px;
+    left: 907px;
+    gap: 0px;
+}

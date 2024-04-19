@@ -74,57 +74,62 @@ const LoginPage = () => {
   };
 
   return (
-   <div><img src={Logo} alt="trackit logo" />
-    <div className={style.container}>
-        
-      <h2 className={style.heading}>Log in to your account</h2>
-      <form onSubmit={handleSubmit}>
-        <div className={style.formgroup}>
-          <label className={style.label}>Email</label>
-          <br />
-          <input
-            placeholder="Enter email"
-            type="text"
-            value={Email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div className={style.formgroupb}>
-          <label className={style.labelpassword}>Password:</label>
-          <br />
-          <input
-            placeholder="Password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <div className={style.forget}>
-          <div className={style.formgroupc}>
-            <label>
+    <div>
+      <div>
+        <img src={Logo} alt="trackit logo" /> 
+      </div>
+      
+      <div className={style.container}>
+        <h2 className={style.heading}>Log in to your account</h2>
+        <form onSubmit={handleSubmit}>
+          <div className={style.formgroup}>
+            <label className={style.label}>Email</label>
+            <br />
+            <input
+              placeholder="Enter email"
+              type="text"
+              value={Email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div><br />
+          <div className={style.formgroupb}>
+            <label className={style.labelpassword}>Password:</label>
+            <br />
+            <input
+              placeholder="Password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div><br />
+          <div className={style.forget}>
+            <div className={style.formgroupc}>
+              <label>
               <input
                 type="checkbox"
                 checked={rememberMe}
                 onChange={(e) => setRememberMe(e.target.checked)}
               />
-              Remember Me
-            </label>
+                Remember Me
+              </label>
+            </div>
+            <div className={style.forgotpassword}>
+              <a href="#" onClick={handleForgotPassword}>
+                Forgot Password?
+              </a>
+            </div>
           </div>
-          <div className={style.forgotpassword}>
-            <a href="#" onClick={handleForgotPassword}>
-              Forgot Password?
-            </a>
+          <div>
+            <CustomButton className={style.primarybutton}>Log in</CustomButton>
           </div>
-        </div>
-        <div>
-          <CustomButton className={style.primarybutton}>Log in</CustomButton>
-        </div>
-        <p className={style.para}>Don't have an account? <a href="#">Sign up</a></p>
-      </form>
-    </div>
-    </div>
+          <div className={style.para}>
+            <p>Don't have an account? <a href="#">Sign up</a></p> 
+          </div>
+        </form>
+      </div>
+    </div>  
   );
 };
 

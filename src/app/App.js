@@ -1,9 +1,8 @@
 import './App.css';
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import  VerifyWithOTP from "./component/Pages/Verify/Verify";
-// import LandingPage from "../../src/app/Component/Pages/";
+import LoginPage from './component/Pages/Login/Login';
 import { LandingPage } from "./component/Pages/LandingPage/LandingPage";
-import LoginPage from "./component/Pages/Login/Login";
 import { SignupPage } from './component/Pages/Signup';
 import { IsProtectedRoute } from './hoc/IsProtectedRoute';
 import { SideNav } from './component/SideNav/SideNavigation';
@@ -25,9 +24,9 @@ const router = createBrowserRouter([
   {
     path: 'verify',
     element: (
-      <IsProtectedRoute>
+      // <IsProtectedRoute>
         <VerifyWithOTP />
-      </IsProtectedRoute>
+      // </IsProtectedRoute>
     )
   },
   {
