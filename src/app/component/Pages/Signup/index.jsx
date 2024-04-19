@@ -5,6 +5,7 @@ import Logo from "../../../assets/images/logo.png";
 import style from "./style.module.css"
 
 export const SignupPage = () => {
+    // State to collect user data
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -12,6 +13,7 @@ export const SignupPage = () => {
         password: ''
     })
 
+    // Define state for checkbox
     const [check, setCheck] = useState(false);
 
     const handleChange = (e) => {

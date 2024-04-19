@@ -23,9 +23,9 @@ const router = createBrowserRouter([
   {
     path: 'verify',
     element: (
-      <IsProtectedRoute>
+      // <IsProtectedRoute>
         <VerifyWithOTP />
-      </IsProtectedRoute>
+      // </IsProtectedRoute>
     )
   },
   {
