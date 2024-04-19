@@ -1,0 +1,69 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    
+}
+
+.navigation{
+    gap: 100px;
+    padding: 30px;
+    margin-top: -40px;
+    
+}
+.navigation a{
+    padding: 20px 20px 20px 20px;
+    color: #490f09;
+    font-weight: 400;
+    text-decoration: none;
+}
+.createAccount{
+    background-color: #f6361c;
+    color: #ffffff;
+    font-weight: 300;
+    border-radius: 5px;
+}
+.createAccount:hover{
+    background-color: transparent;
+}
+a:hover{
+    border-left: 1px solid #f6361c;
+    border-radius: 5px;
+    border-width: 5px;
+  
+    opacity: 5px;
+}
+.heroContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px ;
+    border-bottom: 50px;
+    margin-top: -70px;
+
+}
+.title{
+    color: #490f09;
+    font-weight: bolder;
+}
+.para{
+   color: #490f09;  
+}
+.ladyimage{
+   height: 400px;
+}
+
+.button{
+    background-color: #f6361c;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    margin-top: 50px;
+}
+.button:hover{
+    background-color: #f6361c;
+    opacity: 10px;
+    cursor: pointer;
+}
