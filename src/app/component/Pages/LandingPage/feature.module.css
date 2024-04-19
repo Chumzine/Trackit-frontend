@@ -1,0 +1,61 @@
+.flexContainers{
+   display: flex;
+   gap: 100px;
+   
+}
+.containerDiv{
+    background-color: #fbf7f0;
+    width: 100%;
+    padding: 100px;
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px 30px 5px;
+    margin-top: -20px;
+}
+
+
+.groupOne{
+    
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    
+}
+.flexContainer h6{
+    margin-top: 4px;
+    margin-left: 10px;
+    font-family:'Montserrat' sans-serif;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+   
+   
+}
+.containerDiv p{
+     font-family:'Montserrat' sans-serif;
+    margin-left: 50px;
+    margin-top: -50px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #453F3C;
+    padding: 5px;
+}
+.image0{
+    height: 500px;
+}
+
+.image1{
+    width: 20px;
+    height: 40.06px;
+}
+.image2{
+     width: 30px;
+    height: 30.824px;
+}
+.image3{
+ width: 24px;
+    height: 40.397px;
+}
+

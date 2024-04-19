@@ -1,0 +1,41 @@
+.earn{
+  background-color: #ffffff; 
+  display: flex;
+  gap: 200px;
+  padding: 100px;
+ 
+ 
+}
+.info{
+  margin-top: 30px;
+}
+.info h3{
+  color: #310D07;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.info p{
+  color: #453F3C;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 100px;
+}
+.info a{
+  
+  background-color: #F44322;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-family:  "Montserrat" sans-serif;
+  font-size: 12px;
+  font-size: 300;
+  padding: 15px 60px 15px 60px;
+  text-decoration: none;
+    
+   
+  
+  
+}
