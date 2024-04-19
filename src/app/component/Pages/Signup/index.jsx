@@ -60,44 +60,49 @@ export const SignupPage = () => {
 
     return (
         <section>
-        <header>
-            <img src={Logo} alt="trackit logo" />
-        </header>
-        <main>
-           <h2>Create an account</h2> 
-           <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="Full name">Full name</label>
-                <input type="text" placeholder="full name" name="name" value={form.name} onChange={handleChange} />
-            </div>
-            <div>
-                <label htmlFor="Email">Email</label>
-                <input type="text" placeholder="Enter email" name="email" value={form.email} onChange={handleChange} />
-            </div>
-            <div>
-                <label htmlFor="Phone number">Phone number</label>
-                <input type="tel" placeholder="Enter phone number" name="phoneNum" value={form.phoneNum} onChange={handleChange} />
-            </div>
-            <div>
-                <label htmlFor="Password">Password</label>
-                <input type="password" placeholder="Enter password" name="password" value={form.password} onChange={handleChange} />
-            </div>
-            <div>
-                <label htmlFor=""><input type="checkbox" checked={check} onChange={(e) => setCheck(e.target.checked)} />
-                I agree to <a href="!#">Terms of Service</a> and <a href="!#">Privacy Policy</a>
-                </label>
-            </div>
-            <div>
-                <CustomButton className={style.primarybutton}>Create an account</CustomButton>
-            </div>
-           </form>
-           <div>
-                <p>Already have an account? <a href="!#">Log in</a></p>
-            </div>
-        </main>
-        <div>
-            <TrackingImage /> 
-        </div> 
+            <header>
+                <img src={Logo} alt="trackit logo" />
+            </header>
+            <main>
+                <div className={style.container}>
+                    <h2>Create an account</h2> 
+                    <form onSubmit={handleSubmit}>
+                        <div className={style['form-input']}>
+                            <div>
+                                <label htmlFor="Full name">Full name</label><br />
+                                <input type="text" placeholder="full name" name="name" value={form.name} onChange={handleChange} />
+                            </div><br />
+                            <div>
+                                <label htmlFor="Email">Email</label><br />
+                                <input type="text" placeholder="Enter email" name="email" value={form.email} onChange={handleChange} />
+                            </div><br />
+                            <div>
+                                <label htmlFor="Phone number">Phone number</label><br />
+                                <input type="tel" placeholder="Enter phone number" name="phoneNum" value={form.phoneNum} onChange={handleChange} />
+                            </div><br />
+                            <div>
+                                <label htmlFor="Password">Password</label><br />
+                                <input type="password" placeholder="Enter password" name="password" value={form.password} onChange={handleChange} />
+                            </div><br />
+                        </div>
+                        <div className={style.check}>
+                            <input type="checkbox" checked={check} onChange={(e) => setCheck(e.target.checked)} />
+                            <label htmlFor="checkbox">
+                            I agree to <a href="!#">Terms of Service</a> and <a href="!#">Privacy Policy</a>
+                            </label>
+                        </div><br /><br /><br />
+                        <div>
+                            <CustomButton className={style.create}>Create an account</CustomButton>
+                        </div>
+                    </form>
+                    <div className={style.login}>
+                        <p>Already have an account? <a href="!#">Log in</a></p>
+                    </div>
+                </div>
+                <div className={style.preview}>
+                    <TrackingImage /> 
+                </div> 
+            </main>    
         </section>
     )
 }
