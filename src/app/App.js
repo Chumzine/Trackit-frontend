@@ -4,6 +4,8 @@ import  VerifyWithOTP from "./component/Pages/Verify/Verify";
 import LoginPage from './component/Pages/Login/Login';
 import { LandingPage } from "./component/Pages/LandingPage/LandingPage";
 import { SignupPage } from './component/Pages/Signup';
+import { Profile } from './component/Pages/ProfileSettings';
+import { Support } from './component/Pages/Support';
 import { IsProtectedRoute } from './hoc/IsProtectedRoute';
 import { SideNav } from './component/SideNav/SideNavigation';
 
@@ -24,14 +26,22 @@ const router = createBrowserRouter([
   {
     path: 'verify',
     element: (
-      // <IsProtectedRoute>
+      <IsProtectedRoute>
         <VerifyWithOTP />
-      // </IsProtectedRoute>
+      </IsProtectedRoute>
     )
   },
   {
-    // path: '*',
-    // element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
+    path: 'profile',
+    element: <Profile />
+  },
+  {
+    path: 'support',
+    element: <Support />
+  },
+  {
+    path: '*',
+    element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
   }
 ])
 
