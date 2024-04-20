@@ -1,26 +1,28 @@
 import './App.css';
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import  VerifyWithOTP from "./component/Pages/Verify/Verify";
-// import LandingPage from "../../src/app/Component/Pages/";
-// import LoginPage from "../../src/app/Component/Pages"
+import LoginPage from './component/Pages/Login/Login';
+import { LandingPage } from "./component/Pages/LandingPage/LandingPage";
 import { SignupPage } from './component/Pages/Signup';
+import { Profile } from './component/Pages/ProfileSettings';
+import { Support } from './component/Pages/Support';
 import { IsProtectedRoute } from './hoc/IsProtectedRoute';
 import { SideNav } from './component/SideNav/SideNavigation';
 
 
 const router = createBrowserRouter([
-  // { 
-  //   path: '/',
-  //   element: <LandingPage />
-  // },
+  { 
+    path: 'landingpage',
+    element: <LandingPage />
+  },
   { 
     path: 'signup',
     element: <SignupPage />
   },
-  // { 
-  //   path: 'login',
-  //   element: <LoginPage />
-  // },
+  { 
+    path: 'login',
+    element: <LoginPage />
+  },
   {
     path: 'verify',
     element: (
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
         <VerifyWithOTP />
       </IsProtectedRoute>
     )
+  },
+  {
+    path: 'profile',
+    element: <Profile />
+  },
+  {
+    path: 'support',
+    element: <Support />
   },
   {
     path: '*',
