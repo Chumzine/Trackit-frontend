@@ -1,0 +1,9 @@
+header {
+    padding: var(--app-header-padding);
+}
+.container {
+    background-color: #FBFEF9;
+}
+.content-container {
+    background-color: #FBF7F0;
+}

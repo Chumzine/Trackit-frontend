@@ -2,28 +2,52 @@ body{
   padding: 50px;
 }
 .container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   
-  margin-top: 100px;
+  margin-top: 80px;
   align-items: center;
-  margin-left: 500px;
+  margin-left: 300px;
+  background-color: #FBFEF9;
 
+  width: 725px;
+  height: 702px;
+  top: 153px;
+  left: 358px;
+  border-radius: 50px;
 }
-.formgroup
+.heading
 {
-    margin-left: -250px;
+  justify-content: center;
+  color: #490f09;
+  width: 283px;
+  height: 29px;
+  top: 39px;
+  left: 221px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: left;
+  margin-top: -150px;
+  margin-bottom: 70px;
+}
+
+.formgroup, .formgroupb
+{
+  margin-left: 0px;
+  
 }
 .formgroupc{
     margin-top: 10px;
+    margin-left: 100px;
 }
 .formgroupc input{
-    width: 20px;
-    height: 20px;
-    margin-left: -180px;
-}
-
-.formgroupb{
-    margin-left: -250px;
+  width: 20px;
+  height: 20px;
+  margin-left: -100px;
+  margin-right: 10px;
 }
 .label,
 .labelpassword{
@@ -33,43 +57,43 @@ body{
   margin-top: 10px;
 }
 input{
-    margin-left: -300px;
+    /* margin-left: -300px; */
     height: 40px;
     width: 395px;
     border: 1px solid #d2d9e2;
-}
-.forget{
-    display: flex;
-    
-}
-
-.heading{
-    justify-content: center;
-    color: #490f09;
+    border-radius: 4px;
 }
 
 button:hover {
   background-color: #d2d9e2;
 }
-
+.forget{
+  display: flex;
+  gap: 135px; 
+  align-items: center;
+  justify-content: center;
+}
 .forgotpassword {
-  margin-top: 15px;
-  margin-left: -200px;
+  /* margin-top: 15px; */
+  /* margin-left: -200px; */
   cursor: pointer;
-  
+}
+.forgotpassword a {
+  text-decoration: none;
+  color: #f53c1f;
 }
 .primarybutton {
   margin-top: 70px;
   background-color: #f53c1f;
   color: #fff;
-  width: 200px;
+  width: 180px;
   height: 44px;
   border: none;
   cursor: pointer;
   font-size: 13px;
   font-weight: bold;
   border-radius: 3px;
-  margin-left: -380px;
+  margin-left: 90px;
 }
 
 .primarybutton:hover{
@@ -77,9 +101,9 @@ button:hover {
   
 }
 .para{
-    justify-content: start;
-    margin-top:10px;
-    margin-left: -560px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 70px;
 }
 .para a{
   color: #f53c1f;
