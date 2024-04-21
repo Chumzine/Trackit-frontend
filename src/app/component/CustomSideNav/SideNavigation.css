@@ -1,4 +1,4 @@
-.nav-menu {
+.navmenu {
     background-color: #fff;
     width: 264px;
     height: 100vh;
@@ -6,14 +6,16 @@
     justify-content: center;
     position: fixed;
 }
-.nav-text {
+.navText {
     display: flex;
     justify-content: start;
     align-items: center;
-    list-style: none;
+    list-style: none; text-decoration: none;
 }
-.nav-menu-items {
+.navMenuItems {
     width: 100%;
+    list-style: none;
+   
 }
 span {
     margin-left: 16px;
