@@ -42,10 +42,6 @@ const router = createBrowserRouter([
     ),
   },
   {
-<<<<<<< HEAD
-     path: '*',
-     element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
-=======
     path: 'profile',
     element: <Profile />
   },
@@ -56,7 +52,6 @@ const router = createBrowserRouter([
   {
     path: '*',
     element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
->>>>>>> b4e2baa3c44b4031732a3b04195ca3ec256c7da1
   }
 ])
 
