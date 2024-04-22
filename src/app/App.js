@@ -30,8 +30,8 @@ const router = createBrowserRouter([
     )
   },
   {
-    // path: '*',
-    // element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
+     path: '*',
+     element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
   }
 ])
 
