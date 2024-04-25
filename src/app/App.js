@@ -9,18 +9,24 @@ import { IsProtectedRoute } from "./hoc/IsProtectedRoute";
 import { SideNav } from "./component/CustomSideNav/CustomSideNavigation";
 import { HomePage } from "./component/Home/Home";
 import { Orders} from "./component/Pages/Orders/index"
+import {Tracking} from "./component/Pages/Tracking/Tracking"
+import Chatbox from "./component/Pages/Chatbot/index"
 const router = createBrowserRouter([
   {
-    path: "landingpage",
+    path: "/",
     element: <LandingPage />,
   },
   {
     path: "orders",
-    element: <Orders/>,
+    element: <Orders />,
   },
   {
     path: "home",
     element: <HomePage />,
+  },
+  {
+    path: "tracking",
+    element: <Tracking />,
   },
   {
     path: "signup",
@@ -31,7 +37,11 @@ const router = createBrowserRouter([
     element: <LoginPage />,
   },
   {
-    path: "verify",
+    path: "chatbox",
+    element: <Chatbox/>,
+  },
+  {
+    path: "",
     element: (
       <IsProtectedRoute>
         <VerifyWithOTP />

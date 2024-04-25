@@ -1,0 +1,162 @@
+.flexContainer{
+    display: flex;
+    gap: 200px;
+    padding: 30px;
+    
+}
+.logoDiv{
+    border-bottom: 1px solid #f0eeee;
+}
+
+.tracking{
+ width: 400px;
+ height: 400px;
+ 
+
+}
+.frame{
+    width: 400px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: 50px;
+}
+
+.navigation li{
+    padding: 10px;
+    list-style: none;
+}
+
+.navigation li a{
+    color: #453F3C;
+    font-family: "Montserrat" sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.navigation li img {
+    height: 15px;
+    width: 20px;
+}
+
+.welcome h4{
+    color: #000;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.welcome span{
+    color: #000;
+    font-family: "Montserrat" sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+}
+.welcome input{
+  margin-left: 0px;
+  width: 300px;
+}
+.searchbutton{
+     margin-top: 15px;
+    background-color: #F44322;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;align-items: center;
+    color: #fff;
+    font-family: 'Monstserrat' sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+}
+.searchbutton:hover{
+    background-color: #F44322;
+    
+
+}
+.activity{
+    display: flex;
+    justify-content: center;
+}
+.activity h5{
+    color: #000;
+    font-family:' Montserrat'sans-serif ;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+.activity img{
+    display: flex;
+    justify-content: center;
+}
+.activity span{
+    color: #000;
+    text-align: center;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 150px;
+    margin-left: -140px;
+}
+.icon{
+    display: flex;
+    
+    gap: 30px;
+    padding: 30px;
+}
+.icon div{
+    color: #848484;
+    font-size: 20px;
+    box-shadow: #453F3C;
+    text-align:justify;   
+    justify-self: center;
+}
+.icon h6{
+    margin-top: -3px;
+    color: #000;
+    font-family:' Montserrat' sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+.para{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: fixed;
+
+}
+.link{
+    text-decoration: none;
+    color: #453F3C;
+    cursor: pointer;
+}
+.line{
+    border-bottom: 3px solid #F44322;
+    width: 100px;
+    height: 30px;
+    border-right: 1px solid transparent;
+    margin-left: -140px;
+}
+
+.deliveryInfo{
+    margin-left: 300px;
+    display: flex;
+    gap: 40px;
+      
+}
+.info{
+    text-decoration: none;
+    color: #310D07;
+    position: block;
+}
+
+
+
+
+  
