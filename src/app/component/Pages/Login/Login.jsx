@@ -42,37 +42,35 @@ const LoginPage = () => {
   
   };
 
-  const handleForgotPassword = () => {
-    const handleForgotPassword = async (email) => {
-      try {
-        // Send a request to your backend server to initiate the password reset process
-        const response = await fetch(
-          "https://your-backend-api.com/reset-password",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ email }),
-          }
-        );
-
-        if (response.ok) {
-          // Password reset request successful
-          alert("Password reset email has been sent to your email address.");
-        } else {
-          const errorData = await response.json();
-          alert(`Error: ${errorData.message}`);
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        alert(
-          "An error occurred while processing your request. Please try again later."
-        );
+  const handleForgotPassword = async (email) => {
+  try {
+    // Send a request to your backend server to initiate the password reset process
+    const response = await fetch(
+      "https://your-backend-api.com/reset-password",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
       }
-    };
+    );
 
-  };
+    if (response.ok) {
+      // Password reset request successful
+      alert("Password reset email has been sent to your email address.");
+    } else {
+      const errorData = await response.json();
+      alert(`Error: ${errorData.message}`);
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert(
+      "An error occurred while processing your request. Please try again later."
+    );
+  }
+};
+
 
   return (
     <div>
