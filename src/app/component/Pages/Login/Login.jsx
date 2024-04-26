@@ -4,7 +4,6 @@ import CustomButton from "../../CustomButton/CustomButton";
 import Logo from "../../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
-import logosvg from "../../../assets/icons/logo.svg.svg";
 
 const LoginPage = () => {
   const [Email, setEmail] = useState("");
@@ -78,7 +77,7 @@ const LoginPage = () => {
   return (
     <div>
       <div>
-        <img src={logosvg} />
+        <img src={Logo} alt="trackit logo" />
       </div>
       <div className={style.container}>
         <h2 className={style.heading}>Log in to your account</h2>
