@@ -3,13 +3,13 @@ import style from "./login.module.css";
 import CustomButton from "../../CustomButton/CustomButton";
 import Logo from "../../../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 const LoginPage = () => {
   const [Email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-  const [forgotPassword, setForgotPassword] = useState(false);
+  // const [forgotPassword, setForgotPassword] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -129,7 +129,7 @@ const LoginPage = () => {
             </CustomButton>
           </div>
           <p className={style.para}>
-            Don't have an account? <a href="#">Sign up</a>
+            Don't have an account? <a href="!#">Sign up</a>
           </p>
         </form>
       </div>
