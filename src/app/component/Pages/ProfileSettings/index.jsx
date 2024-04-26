@@ -35,6 +35,10 @@ export const Profile = () => {
                 body: JSON.stringify(profile)
             });
 
+            if (!response.ok) {
+                throw new Error('Failed to update. Please try again later.');
+            }
+
             // Handle successful update
             alert('Update successful!');
 
