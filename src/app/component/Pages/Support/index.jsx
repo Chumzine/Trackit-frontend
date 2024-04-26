@@ -1,5 +1,5 @@
 import Logo from '../../../assets/images/logo.png';
-import { SideNav } from '../../SideNav/SideNavigation';
+import { CustomSideNav } from "../../CustomSideNav/CustomSideNavigation";
 import { MainHeader } from '../../MainHeader';
 import { ReactComponent as CallUsIcon } from '../../../assets/icons/call-us.svg';
 import { ReactComponent as EmailUsIcon } from '../../../assets/icons/email-us.svg';
@@ -14,7 +14,7 @@ export const Support = () => {
             <img src={Logo} alt="Trackit logo" />
         </header>
         <main>
-            <SideNav />
+            <CustomSideNav />
             <div className={style.container}>
                 <div>
                     <MainHeader>

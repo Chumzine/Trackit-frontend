@@ -69,7 +69,7 @@ export const SignupPage = () => {
                 <div className={style.container}>
                     <h2>Create an account</h2> 
                     <form onSubmit={handleSubmit}>
-                        <div className={style['form-input']}>
+                        <div className={style.formInput}>
                             <div>
                                 <label htmlFor="Full name">Full name</label><br />
                                 <input type="text" placeholder="full name" name="name" value={form.name} onChange={handleChange} />

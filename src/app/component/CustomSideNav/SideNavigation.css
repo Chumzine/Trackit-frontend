@@ -6,6 +6,10 @@
     justify-content: center;
     position: fixed;
 }
+.navMenuItems {
+    width: 100%;
+    padding-left: 0; /* Remove default padding for the list */
+}
 .navText {
     display: flex;
     justify-content: start;
@@ -20,4 +24,14 @@
 }
 span {
     margin-left: 16px;
+}
+}
+
+.navText a {
+    text-decoration: none; /* Remove text decoration only for links inside .navText */
+}
+
+/* Remove default list styles */
+.navMenuItems li {
+    list-style: none;
 }

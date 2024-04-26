@@ -9,30 +9,30 @@ export const SideNavData = [
         title: 'Home',
         path: '/',
         icon: HomeLogo,
-        className: 'nav-text'
+        className: 'navText'
     },
     {
         title: 'Orders',
         path: '/orders',
         icon: OrdersLogo,
-        className: 'nav-text'
+        className: 'navText'
     },
     {
         title: 'Wallet',
         path: '/wallet',
         icon: WalletLogo,
-        className: 'nav-text'
+        className: 'navText'
     },
     {
         title: 'Settings',
         path: '/settings',
         icon: SettingsLogo,
-        className: 'nav-text'
+        className: 'navText'
     },
     {
         title: 'Support',
         path: '/support',
         icon: SupportLogo,
-        className: 'nav-text'
+        className: 'navText'
     },
 ]

@@ -1,8 +1,9 @@
+import React from "react"
 import style from "./home.module.css";
 import logosvg from "../../assets/icons/logo.svg.svg";
 import { Link } from "react-router-dom";
 import EmptyState from "../../assets/icons/EmptyState.svg";
-
+import { useHistory } from "react-router-dom";
 import CustomButton from "../CustomButton/CustomButton";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
@@ -10,7 +11,15 @@ import { CgProfile } from "react-icons/cg";
 import { FiPlus } from "react-icons/fi";
 import { CustomSideNav } from "../CustomSideNav/CustomSideNavigation";
 
+
+
 export const HomePage = () => {
+  // const history = useHistory();
+
+  const handleButtonClick = () => {
+   
+    // history.push('/tracking'); 
+  };
   return (
     <div className={style.containerDiv}>
       <div className={style.logoDiv}>
@@ -32,7 +41,8 @@ export const HomePage = () => {
             <p>Enter your Tracking ID</p>
             <input placeholder="Order tracking ID" />
             <div>
-              <CustomButton className={style.searchbutton}>
+              <CustomButton className={style.searchbutton}
+              onClick={handleButtonClick}>
                 Search for package
               </CustomButton>
             </div>
@@ -84,8 +94,8 @@ export const HomePage = () => {
             <br />
             <label className={style.label}>Package Type</label>
             <input className={style.label} placeholder="package type" />
-            <Link to ="/signup">
-              
+
+            <Link to="/signup">
               <FiPlus /> Add another account
             </Link>
             <CustomButton className={style.dispatchbutton}>
