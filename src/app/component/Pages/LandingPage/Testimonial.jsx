@@ -16,21 +16,21 @@ export const Testimonial = () => {
             The real time tracking feature is a <br /> game changer. I always
             know exactly <br /> where my package is.
           </p>
-          <img src={james} alt="A picture of James" />
+          <img src={james} alt="A satisfied client James" />
         </div>
         <div className={style.card2}>
           <p className={style.name}>Felix</p>
           <p className={style.description}>
             Highly recommended. I love <br /> Track it
           </p>
-          <img src={felix} alt="A picture of Felix" />
+          <img src={felix} alt="A satisfied client Felix" />
         </div>
         <div className={style.card3}>
           <p className={style.name}>Charles</p>
           <p className={style.description}>
             They delivered my package on time <br /> with utmost case
           </p>
-          <img src={charles} alt="A picture of Charles" />
+          <img src={charles} alt="A satisfied client Charles" />
         </div>
       </div>
     </div>
