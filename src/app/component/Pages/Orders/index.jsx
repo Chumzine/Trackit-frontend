@@ -18,7 +18,7 @@ import { FiPlus } from "react-icons/fi";
 export const Orders = () => {
   return (
     <div className={style.containerDiv}>
-      <div className={style.logoDiv}>
+      <div>
         <img src={Logo} alt="trackit logo" />
       </div>
       <div className={style.flexContainer}>
