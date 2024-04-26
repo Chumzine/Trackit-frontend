@@ -13,7 +13,7 @@ export const HeroSection = () => {
     <div>
       <div className={style.header}>
         <div>
-          <img src={logosvg} />
+          <img src={logosvg} alt="Trackit logo" />
         </div>
         <div>
           <nav className={style.navigation}>

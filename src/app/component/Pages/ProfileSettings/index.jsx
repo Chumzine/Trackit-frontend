@@ -61,7 +61,9 @@ export const Profile = () => {
             <CustomSideNav />
             <div className={style.content}>
                 <div>
-                    <MainHeader />
+                    <MainHeader>
+                        <h2>Profile</h2>
+                    </MainHeader>
                 </div>
                 <div className={style['form-container']}>
                     <DisplayPicIcon />

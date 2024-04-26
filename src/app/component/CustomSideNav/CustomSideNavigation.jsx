@@ -30,7 +30,7 @@ export const CustomSideNav = () => {
     <nav className={style.navmenu}>
       <ul className={style.navMenuItems}>
         {SideNavData.map((item, index) => (
-          <li
+          <li>
             key={index}
             className={`${item.className} ${item.isActive ? "active" : ""}`}
           >

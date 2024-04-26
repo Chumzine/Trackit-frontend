@@ -23,7 +23,7 @@ export const HomePage = () => {
   return (
     <div className={style.containerDiv}>
       <div className={style.logoDiv}>
-        <img src={logosvg} />
+        <img src={logosvg} alt="Trackit logo" />
       </div>
       <div className={style.flexContainer}>
         <div className={style.navigation}>
@@ -49,7 +49,7 @@ export const HomePage = () => {
           </div>
           <div className={style.activity}>
             <h5>Activity</h5>
-            <img src={EmptyState} />
+            <img src={EmptyState} alt="No orders" />
             <span>No orders Placed</span>
           </div>
         </div>
@@ -94,13 +94,11 @@ export const HomePage = () => {
             <br />
             <label className={style.label}>Package Type</label>
             <input className={style.label} placeholder="package type" />
+
             <Link to="/signup">
               <FiPlus /> Add another account
             </Link>
-            <CustomButton
-              className={style.dispatchbutton}
-              
-            >
+            <CustomButton className={style.dispatchbutton}>
               Book dispatch
             </CustomButton>
           </div>
