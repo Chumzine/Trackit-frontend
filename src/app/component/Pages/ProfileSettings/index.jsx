@@ -60,7 +60,9 @@ export const Profile = () => {
             <SideNav />
             <div className={style.content}>
                 <div>
-                    <MainHeader />
+                    <MainHeader>
+                        <h2>Profile</h2>
+                    </MainHeader>
                 </div>
                 <div className={style['form-container']}>
                     <DisplayPicIcon />
