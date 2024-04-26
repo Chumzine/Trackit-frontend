@@ -2,7 +2,7 @@
     background-color: #310D07;
     display: flex;
     padding: 100px;
-    gap:100px;
+    gap:70px;
 
 }
 .company ul{
@@ -75,11 +75,14 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-family: 'monstserrat';
-    font-size: 14px;
-    font-weight: 500;
+    font-family: 'monstserrat'sans-serif;
+    font-size: 13px;
+    font-weight: 400;
     border: none;
     border-radius: 5px;
+}
+.button:hover{
+    background-color: #F44322;
 }
 
 .getUpdate input{

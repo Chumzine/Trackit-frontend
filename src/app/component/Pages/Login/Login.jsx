@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import style from "./login.module.css"; 
 import CustomButton from "../../CustomButton/CustomButton";
 import Logo from "../../../assets/images/logo.png";
-
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const LoginPage = () => {
   const [Email, setEmail] = useState("");
@@ -36,7 +37,7 @@ const LoginPage = () => {
         console.error('Login failed:', data.error);
       }
     } catch (error) {
-      console.error('An error occurred:', error);
+      console.error('Incorrect Username or password:', error);
     }
   
   };
@@ -75,13 +76,10 @@ const LoginPage = () => {
 
   return (
     <div>
-      <div>
-        <img src={Logo} alt="trackit logo" /> 
-      </div>
-      
+      <img src={Logo} alt="trackit logo" />
       <div className={style.container}>
         <h2 className={style.heading}>Log in to your account</h2>
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className={style.formgroup}>
             <label className={style.label}>Email</label>
             <br />
@@ -92,7 +90,7 @@ const LoginPage = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-          </div><br />
+          </div>
           <div className={style.formgroupb}>
             <label className={style.labelpassword}>Password:</label>
             <br />
@@ -103,33 +101,37 @@ const LoginPage = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-          </div><br />
+          </div>
           <div className={style.forget}>
             <div className={style.formgroupc}>
               <label>
-              <input
-                type="checkbox"
-                checked={rememberMe}
-                onChange={(e) => setRememberMe(e.target.checked)}
-              />
+                <input
+                  type="checkbox"
+                  checked={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                  className={style.checkbox}
+                />
                 Remember Me
               </label>
             </div>
             <div className={style.forgotpassword}>
-              <a href="#" onClick={handleForgotPassword}>
-                Forgot Password?
-              </a>
+              <Link onClick={handleForgotPassword}>Forgot Password?</Link>
             </div>
           </div>
           <div>
-            <CustomButton className={style.primarybutton}>Log in</CustomButton>
+            <CustomButton
+              onSubmit={handleSubmit}
+              className={style.primarybutton}
+            >
+              Log in
+            </CustomButton>
           </div>
-          <div className={style.para}>
-            <p>Don't have an account? <a href="#">Sign up</a></p> 
-          </div>
+          <p className={style.para}>
+            Don't have an account? <a href="#">Sign up</a>
+          </p>
         </form>
       </div>
-    </div>  
+    </div>
   );
 };
 

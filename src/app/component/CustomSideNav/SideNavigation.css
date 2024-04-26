@@ -1,0 +1,28 @@
+.navmenu {
+    background-color: #fff;
+    width: 264px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+.navMenuItems {
+    width: 100%;
+    padding-left: 0; /* Remove default padding for the list */
+}
+
+.navText {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navText a {
+    text-decoration: none; /* Remove text decoration only for links inside .navText */
+}
+
+/* Remove default list styles */
+.navMenuItems li {
+    list-style: none;
+}

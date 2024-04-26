@@ -44,24 +44,49 @@ body{
     margin-left: 100px;
 }
 .formgroupc input{
-  width: 20px;
-  height: 20px;
-  margin-left: -100px;
-  margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    margin-left: -180px;
+}
+
+.formgroupb{
+    margin-left: -250px;
+}
+
+.label{
+   
 }
 .label,
 .labelpassword{
   color: #490f09; 
+  margin-left: 150px;
+  margin-top: 100px;
 }
 .labelpassword{
-  margin-top: 10px;
+  
 }
 input{
-    /* margin-left: -300px; */
+    margin-left: 150px;
     height: 40px;
     width: 395px;
     border: 1px solid #d2d9e2;
-    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.forget{
+    display: flex;
+    gap: 300px;
+    margin-left: 80px;
+    
+}
+.checkbox{
+  height: 5px;
+  width: 5px;
+}
+
+.heading{
+    justify-content: center;
+    color: #490f09;
+    margin-bottom: 35px;
 }
 
 button:hover {
@@ -77,13 +102,16 @@ button:hover {
   /* margin-top: 15px; */
   /* margin-left: -200px; */
   cursor: pointer;
-}
-.forgotpassword a {
-  text-decoration: none;
   color: #f53c1f;
+  text-decoration: none;
+  
+}
+.forgotpassword a{
+    color: #f53c1f;
+  text-decoration: none;
 }
 .primarybutton {
-  margin-top: 70px;
+  margin-top: 50px;
   background-color: #f53c1f;
   color: #fff;
   width: 180px;
@@ -93,7 +121,7 @@ button:hover {
   font-size: 13px;
   font-weight: bold;
   border-radius: 3px;
-  margin-left: 90px;
+  margin-left: 10px;
 }
 
 .primarybutton:hover{
@@ -101,11 +129,12 @@ button:hover {
   
 }
 .para{
-  justify-content: center;
-  margin-top: 20px;
-  margin-left: 70px;
+    justify-content: start;
+    margin-top:10px;
+    margin-left: 5px;
 }
 .para a{
   color: #f53c1f;
   font-weight: lighter;
+  text-decoration: none;
 }
