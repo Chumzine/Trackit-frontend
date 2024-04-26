@@ -13,7 +13,7 @@ import EmptyState from "../../../assets/icons/EmptyState.svg";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-import { FiPlus } from "react-icons/fi";
+// import { FiPlus } from "react-icons/fi";
 
 export const Orders = () => {
   return (
@@ -58,7 +58,7 @@ export const Orders = () => {
         <Link className={style.info}>Status</Link>
       </div>
       <div className={style.activity}>
-        <img src={EmptyState} />
+        <img src={EmptyState} alt="Empty box icon" />
         <span>No orders Placed</span>
       </div>
     </div>
