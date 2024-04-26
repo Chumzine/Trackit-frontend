@@ -10,12 +10,12 @@ export const Features = () => {
       <h1 className={style.title}>Why choose us?</h1>
       <div className={style.flexContainers}>
         <div>
-          <img className={style.image0} src={receivingPackage} />
+          <img className={style.image0} src={receivingPackage} alt="A client receiving a package" />
         </div>
         <div className={style.group}>
           <div className={style.groupOne}>
             <div>
-              <img className={style.image1} src={bolt} />
+              <img className={style.image1} src={bolt} alt="Lightening speed" />
             </div>
 
             <div>
@@ -30,7 +30,7 @@ export const Features = () => {
 
           <div className={style.groupOne}>
             <div>
-              <img className={style.image2} src={payments} />
+              <img className={style.image2} src={payments} alt="Cash notes" />
             </div>
             <div>
               <h6>Cost Saving</h6>
@@ -44,7 +44,7 @@ export const Features = () => {
 
           <div className={style.groupOne}>
             <div>
-              <img className={style.image3} src={arming_countdown} />
+              <img className={style.image3} src={arming_countdown} alt="Security shield" />
             </div>
             <div className={style.lastclass}>
               <h6>Real time Tracking</h6>
@@ -59,14 +59,3 @@ export const Features = () => {
   );
 };
 
-{
-  /* <div className={style.groupOne}>
-              <div>
-                <img src={arming_countdown} />
-              </div>
-              <div>
-                <p>Real time Tracking</p>
-              </div>
-            </div>
-            <p>Easily monitor the progress of your delivery in <br /> real time.</p> */
-}

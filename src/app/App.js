@@ -9,7 +9,7 @@ import { Support } from './component/Pages/Support';
 import { HomePage } from "./component/Home/Home";
 import { Orders} from "./component/Pages/Orders/index"
 import { IsProtectedRoute } from './hoc/IsProtectedRoute';
-import { SideNav } from "./component/CustomSideNav/CustomSideNavigation";
+import { CustomSideNav } from "./component/CustomSideNav/CustomSideNavigation";
 
 
 const router = createBrowserRouter([

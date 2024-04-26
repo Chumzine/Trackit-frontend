@@ -10,7 +10,8 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    list-style: none; text-decoration: none;
+    list-style: none;
+    text-decoration: none;
 }
 .navMenuItems {
     width: 100%;

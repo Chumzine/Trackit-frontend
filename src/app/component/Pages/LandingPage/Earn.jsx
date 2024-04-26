@@ -12,10 +12,10 @@ export const EarnOption = () => {
             capacity, we want you on the Track it Team. Join the team to
             increase your earnings
           </p>
-          <a href="#">Ride with us!</a>
+          <a href="!#">Ride with us!</a>
         </div>
         <div>
-          <img className={style.image0} src={Box} />
+          <img className={style.image0} src={Box} alt="A delivery package" />
         </div>
       </div>
     </div>
