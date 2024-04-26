@@ -45,7 +45,8 @@ const router = createBrowserRouter([
       <IsProtectedRoute>
         <VerifyWithOTP />
       </IsProtectedRoute>
-    ),
+    )
+  },
   {
     path: "chatbox",
     element: <Chatbox />,
