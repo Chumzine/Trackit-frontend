@@ -1,6 +1,5 @@
 import Logo from '../../../assets/images/logo.png'
 import style from "./style.module.css";
-import logosvg from "../../../assets/icons/logo.svg.svg";
 import { CustomSideNav} from "../../CustomSideNav/CustomSideNavigation"
 import { Link } from "react-router-dom";
 // import home from "../Assets/images/home.svg";
@@ -20,7 +19,7 @@ export const Orders = () => {
   return (
     <div className={style.containerDiv}>
       <div className={style.logoDiv}>
-        <img src={logosvg} />
+        <img src={Logo} alt="trackit logo" />
       </div>
       <div className={style.flexContainer}>
         <div className={style.navigation}>
