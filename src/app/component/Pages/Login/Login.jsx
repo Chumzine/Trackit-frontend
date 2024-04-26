@@ -4,6 +4,7 @@ import CustomButton from "../../CustomButton/CustomButton";
 import Logo from "../../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+import logosvg from "../../../assets/icons/logo.svg.svg";
 
 const LoginPage = () => {
   const [Email, setEmail] = useState("");
@@ -76,7 +77,9 @@ const LoginPage = () => {
 
   return (
     <div>
-      <img src={Logo} alt="trackit logo" />
+      <div>
+        <img src={logosvg} />
+      </div>
       <div className={style.container}>
         <h2 className={style.heading}>Log in to your account</h2>
         <form>
@@ -104,7 +107,7 @@ const LoginPage = () => {
           </div>
           <div className={style.forget}>
             <div className={style.formgroupc}>
-              <label>
+              <label className={style.checkboxlabel}>
                 <input
                   type="checkbox"
                   checked={rememberMe}

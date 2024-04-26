@@ -1,6 +1,7 @@
 import Logo from '../../../assets/images/logo.png';
 import { MainHeader } from '../../MainHeader';
-import { SideNav } from '../../SideNav/SideNavigation';
+import { CustomSideNav } from '../../CustomSideNav/CustomSideNavigation';
+import CustomButton from "../../CustomButton/CustomButton";
 import { ReactComponent as DisplayPicIcon } from '../../../assets/icons/display-pic.svg';
 import React, { useState } from 'react';
 import style from './style.module.css';
@@ -57,7 +58,7 @@ export const Profile = () => {
             <img src={Logo} alt="Trackit logo" />
         </header>
         <main>
-            <SideNav />
+            <CustomSideNav />
             <div className={style.content}>
                 <div>
                     <MainHeader />
