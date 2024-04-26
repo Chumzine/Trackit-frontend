@@ -40,7 +40,7 @@ export const HeroSection = () => {
           </CustomButton>
         </div>
         <div>
-          <img className={style.ladyimage} src={heroLady} />
+          <img className={style.ladyimage} src={heroLady} alt="A delivery agent lady" />
         </div>
       </div>
       <Features />
