@@ -81,9 +81,17 @@ input{
 .checkbox{
   height: 5px;
   width: 5px;
-  
+  margin-right: 10px;
+ 
  
 }
+
+.checkboxlabel{
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.style
 .formgroupc label{
   display: flex;
   
@@ -94,11 +102,12 @@ button:hover {
 }
 
 .forgotpassword {
-  /* margin-top: 15px; */
-  /* margin-left: -200px; */
+  /* margin-top: 15px; 
+  margin-left: -200px;  */
   cursor: pointer;
   color: #f53c1f;
   text-decoration: none;
+  margin-top: 14px;
   
 }
 .forgotpassword a{
