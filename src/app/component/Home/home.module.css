@@ -99,19 +99,21 @@
     font-weight: 700;
 }
 .activity img{
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center; 
     margin-top: 30px;
     margin-left: 80px;
 }
 .activity span{
     color: #000;
-    text-align: center;
+    text-align: right;
     font-family: 'Montserrat' sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
-    margin-left: 20px;
+    margin-right: 1px;
+    margin-top: 10px;
+  
 }
 .icon{
     display: flex;
@@ -227,7 +229,7 @@
     opacity: 19px;
 }
 
-.label{
+.label2{
     margin-bottom: 10px;
 }
 .packageInput{
