@@ -27,26 +27,27 @@
 }
 
 .navigation li img {
-    height: 15px;
-    width: 20px;
+    height: 10px;
+    width: 15px;
 }
 
 .welcome h4{
     color: #000;
     font-family: 'Montserrat' sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     
 }
 .welcome p{
     
+    
 }
 
 .welcome span{
     color: #000;
     font-family: "Montserrat" sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     font-style: normal;
     font-weight: 300;
     
@@ -82,33 +83,41 @@
 .track p{
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
+
+
 .activity{
     margin-left: 40px;
+    /* text-size-adjust: 10px; */
 }
 .activity h5{
     color: #000;
     font-family:' Montserrat'sans-serif ;
-    font-size: 24px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
 }
 .activity img{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    margin-top: 30px;
+    margin-left: 80px;
 }
 .activity span{
     color: #000;
-    text-align: center;
+    text-align: right;
     font-family: 'Montserrat' sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 300;
-    margin-left: 20px;
+    margin-right: 1px;
+    margin-top: 10px;
+  
 }
 .icon{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     padding: 30px;
 }
 .icon div{
@@ -119,15 +128,16 @@
     justify-self: center;
 }
 .icon h6{
-    margin-top: -3px;
+    margin-top: 3px;
     color: #000;
     font-family:' Montserrat' sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
+    margin-right: 15px;
 }
 .form{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .form h4{
     
@@ -136,33 +146,38 @@
 
 .form h4{
     margin: -25px;
-    margin-left: 70px;
+    margin-left: 10;
     color: #310D07;
     font-family: 'Montserrat' sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     display: flex;
     justify-content: center;
 }
 .form label{
-   margin-left:50px;
+   margin-left:10px;
+   font-size: 12px;
 }
 .form input{
-    margin-left: 50px;
+    margin-left: 10px;
+    width: 450px;
+    height: 30px;
+    margin-bottom: -30px;
+
     
 }
 .form .label{
-    margin-top: -2px;
+    margin-top: 10px;
 }
 
 .formtwo h4{
     margin: -25px;
-    margin-left: 70px;
+    margin-left: 10px;
     margin-top: 30px;
     color: #310D07;
     font-family: 'Montserrat' sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     display: flex;
@@ -173,29 +188,35 @@
 .formtwo{
     display: flex;
     flex-direction: column;
+    margin-bottom: -35px;
+   
 }
 
 .formtwo label{
-   margin-left:50px;
+   margin-left: 10px;
+   font-size: 12px;
 }
 .formtwo input{
-    margin-left: 50px;
+    margin-left: 10px;
+    width: 450px;
+    height: 30px;
     
 }
 .formtwo .label{
-   margin-top: 1px;
+   margin-top: -25px;
+   font-size: 12px;
    
 }
 .formtwo a{
     color: var(--Primary-Color, #F44322);
     font-family: 'Montserrat' sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 300;
-    padding: 30px;
-    margin-left: 100px;
+    padding: 20px;
+    margin-right: 100px; 
     font-family: 'Montserrat' sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
 
@@ -207,17 +228,24 @@
     border-width: 0px;
     opacity: 19px;
 }
+
+.label2{
+    margin-bottom: 10px;
+}
+.packageInput{
+    margin-top: 5px
+}
 .dispatchbutton{
      background-color:#F44322;
     color: #FFFFFF;
     padding: 16px 25px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     font-family: Helvetica;
     border: none;
-    width: 380px;
+    width: 350px;
     margin-left: 70px;
     cursor: pointer;
 }
