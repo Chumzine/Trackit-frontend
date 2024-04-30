@@ -1,7 +1,9 @@
-import Logo from '../../../assets/images/logo.png'
-import style from "./style.module.css";
-import { CustomSideNav} from "../../CustomSideNav/CustomSideNavigation"
-import { Link } from "react-router-dom";
+import Logo from "../../../assets/images/logo.png";
+import style from "./tracking.module.css";
+import trackingImage from "../../../assets/icons/trackingImage.svg";
+import locationframe from "../../../assets/icons/locationframe.svg";
+import { CustomSideNav } from "../../CustomSideNav/CustomSideNavigation";
+// import { Link } from "react-router-dom";
 // import home from "../Assets/images/home.svg";
 // import note from "../Assets/images/note.svg";
 // import emptywallet from "../Assets/images/emptywallet.svg";
@@ -15,7 +17,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
 // import { FiPlus } from "react-icons/fi";
 
-export const Orders = () => {
+export const Tracking= () => {
   return (
     <div className={style.containerDiv}>
       <div>
@@ -26,11 +28,12 @@ export const Orders = () => {
           <CustomSideNav />
         </div>
         <div className={style.welcome}>
-          <h4>Orders</h4>
-          <div className={style.para}>
-            <Link className={style.link}>Pending Orders</Link>
-            <div className={style.line}></div>
-            <Link className={style.link}>Completed Orders</Link>
+          <h4>OrderID#00011</h4>
+          <div>
+            <p>Overview</p>
+          </div>
+          <div>
+            <img src={trackingImage} className={style.tracking} alt="A tracking map" />
           </div>
         </div>
         <div className={style.profile}>
@@ -45,20 +48,19 @@ export const Orders = () => {
             <div>
               <IoIosArrowDown />{" "}
             </div>
+          
+            <div>  <p>Stops</p>
+              <img src={locationframe} className={style.frame} alt="Location frame" />
+            </div>
           </div>
         </div>
       </div>
-      <div className={style.deliveryInfo}>
-        <Link className={style.info}>Date Placed</Link>
-        <Link className={style.info}>Tracking ID</Link>
-        <Link className={style.info}>Pickup Address</Link>
-        <Link className={style.info}>Dropoff Address</Link>
-        <Link className={style.info}>Phone Number</Link>
-        <Link className={style.info}> Price</Link>
-        <Link className={style.info}>Status</Link>
-      </div>
+      {/* <div>
+        <img src={trackingImage} className={style.tracking} />
+      </div> */}
+
       <div className={style.activity}>
-        <img src={EmptyState} alt="Empty box icon" />
+        <img src={EmptyState} alt="Empty box" />
         <span>No orders Placed</span>
       </div>
     </div>

@@ -1,13 +1,24 @@
 .flexContainer{
     display: flex;
-    gap: 300px;
+    gap: 200px;
     padding: 30px;
     
 }
+.logoDiv{
+    border-bottom: 1px solid #f0eeee;
+}
 
-.form{
-    display: flex;
-    flex-direction: column;
+.tracking{
+ width: 400px;
+ height: 400px;
+ 
+
+}
+.frame{
+    width: 400px;
+    height: 400px;
+    margin-left: -400px;
+    margin-top: 50px;
 }
 
 .navigation li{
@@ -144,6 +155,8 @@
     color: #310D07;
     position: block;
 }
+
+
 
 
   
