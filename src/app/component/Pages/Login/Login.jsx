@@ -127,7 +127,7 @@ const LoginPage = () => {
             </CustomButton>
           </div>
           <p className={style.para}>
-            Don't have an account? <a href="!#">Sign up</a>
+            Don't have an account? <a href="/signup">Sign up</a>
           </p>
         </form>
       </div>
