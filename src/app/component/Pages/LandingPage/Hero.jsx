@@ -1,6 +1,6 @@
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
-import logosvg from "../../../assets/icons/logo.svg.svg";
+import Logo from "../../../assets/images/logo.png";
 import heroLady from "../../../assets/icons/heroLady.svg";
 import CustomButton from "../../CustomButton/CustomButton";
 import { Features } from "./Features";
@@ -13,7 +13,7 @@ export const HeroSection = () => {
     <div>
       <div className={style.header}>
         <div>
-          <img src={logosvg} />
+          <img src={Logo} alt="Trackit logo" />
         </div>
         <div>
           <nav className={style.navigation}>
@@ -40,7 +40,7 @@ export const HeroSection = () => {
           </CustomButton>
         </div>
         <div>
-          <img className={style.ladyimage} src={heroLady} />
+          <img className={style.ladyimage} src={heroLady} alt="A delivery agent lady" />
         </div>
       </div>
       <Features />

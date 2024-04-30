@@ -7,13 +7,25 @@ import { SignupPage } from './component/Pages/Signup';
 import { Profile } from './component/Pages/ProfileSettings';
 import { Support } from './component/Pages/Support';
 import { HomePage } from "./component/Home/Home";
-import { Orders} from "./component/Pages/Orders/index"
-import {Tracking} from "./component/Pages/Tracking/Tracking"
-import Chatbox from "./component/Pages/Chatbot/index"
+import { Orders} from "./component/Pages/Orders/index";
+import { IsProtectedRoute } from './hoc/IsProtectedRoute';
+// import { CustomSideNav } from "./component/CustomSideNav/CustomSideNavigation";
+import {Tracking} from "./component/Pages/Tracking/Tracking";
+import Chatbox from "./component/Pages/Chatbot/index";
+
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />,
+  },
+  {
+    path: "signup",
+    element: <SignupPage />,
+  },
+  {
+    path: "login",
+    element: <LoginPage />,
   },
   {
     path: "orders",
@@ -28,25 +40,17 @@ const router = createBrowserRouter([
     element: <Tracking />,
   },
   {
-    path: "signup",
-    element: <SignupPage />,
-  },
-  {
-    path: "login",
-    element: <LoginPage />,
+    path: "verify",
+    element: (
+      <IsProtectedRoute>
+        <VerifyWithOTP />
+      </IsProtectedRoute>
+    )
   },
   {
     path: "chatbox",
-    element: <Chatbox/>,
+    element: <Chatbox />,
   },
-  // {
-  //   path: "",
-  //   element: (
-  //     <IsProtectedRoute>
-  //       <VerifyWithOTP />
-  //     </IsProtectedRoute>
-  //   ),
-  // },
   {
     path: 'profile',
     element: <Profile />

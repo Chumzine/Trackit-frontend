@@ -12,7 +12,7 @@ export const Footer = () => {
     <div className={style.containerDiv}>
       <div className={style.footerContainer}>
         <div className={style.logoContainer}>
-          <img src={logosvg} />
+          <img src={logosvg} alt="Trackit logo" />
         </div>
         <div className={style.contact}>
           <h6>Contact us</h6>
@@ -25,13 +25,13 @@ export const Footer = () => {
           <h6>COMPANY</h6>
           <ul>
             <li>
-              <a href="#">Ride with us</a>
+              <a href="!#">Ride with us</a>
             </li>
             <li>
-              <a href="#">Terms of service</a>
+              <a href="!#">Terms of service</a>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <a href="!#">Privacy</a>
             </li>
           </ul>
         </div>
