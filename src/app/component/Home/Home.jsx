@@ -92,8 +92,8 @@ export const HomePage = () => {
             <label className={style.label}>Phone number</label>
             <input />
             <br />
-            <label className={style.label}>Package Type</label>
-            <input className={style.label} placeholder="package type" />
+            <label className={style.label2}>Package Type</label>
+            <input className={style.label2} placeholder="package type" />
 
             <Link to="/signup">
               <FiPlus /> Add another account
