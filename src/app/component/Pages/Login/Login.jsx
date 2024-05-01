@@ -3,14 +3,13 @@ import style from "./login.module.css";
 import CustomButton from "../../CustomButton/CustomButton";
 import Logo from "../../../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
-import logosvg from "../../../assets/icons/logo.svg.svg";
+// import { useHistory } from "react-router-dom";
 
 const LoginPage = () => {
   const [Email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-  const [forgotPassword, setForgotPassword] = useState(false);
+  // const [forgotPassword, setForgotPassword] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,42 +42,40 @@ const LoginPage = () => {
   
   };
 
-  const handleForgotPassword = () => {
-    const handleForgotPassword = async (email) => {
-      try {
-        // Send a request to your backend server to initiate the password reset process
-        const response = await fetch(
-          "https://your-backend-api.com/reset-password",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ email }),
-          }
-        );
-
-        if (response.ok) {
-          // Password reset request successful
-          alert("Password reset email has been sent to your email address.");
-        } else {
-          const errorData = await response.json();
-          alert(`Error: ${errorData.message}`);
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        alert(
-          "An error occurred while processing your request. Please try again later."
-        );
+  const handleForgotPassword = async (email) => {
+  try {
+    // Send a request to your backend server to initiate the password reset process
+    const response = await fetch(
+      "https://your-backend-api.com/reset-password",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
       }
-    };
+    );
 
-  };
+    if (response.ok) {
+      // Password reset request successful
+      alert("Password reset email has been sent to your email address.");
+    } else {
+      const errorData = await response.json();
+      alert(`Error: ${errorData.message}`);
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert(
+      "An error occurred while processing your request. Please try again later."
+    );
+  }
+};
+
 
   return (
     <div>
       <div>
-        <img src={logosvg} />
+        <img src={Logo} alt="trackit logo" />
       </div>
       <div className={style.container}>
         <h2 className={style.heading}>Log in to your account</h2>
@@ -130,7 +127,7 @@ const LoginPage = () => {
             </CustomButton>
           </div>
           <p className={style.para}>
-            Don't have an account? <a href="#">Sign up</a>
+            Don't have an account? <a href="/signup">Sign up</a>
           </p>
         </form>
       </div>

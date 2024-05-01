@@ -3,7 +3,7 @@ import style from "./home.module.css";
 import logosvg from "../../assets/icons/logo.svg.svg";
 import { Link } from "react-router-dom";
 import EmptyState from "../../assets/icons/EmptyState.svg";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import CustomButton from "../CustomButton/CustomButton";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
