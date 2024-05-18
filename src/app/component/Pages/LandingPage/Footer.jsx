@@ -1,6 +1,7 @@
 import style from "./footer.module.css";
 import CustomButton from "../../CustomButton/CustomButton";
 import logosvg from "../../../assets/icons/logo.svg.svg";
+import { ReactComponent as VectorLines } from "../../../assets/icons/vector-lines.svg"
 
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -50,13 +51,16 @@ export const Footer = () => {
       </div>
       <div className={style.icon}>
         <div>
-          <FaInstagram />
+          <FaInstagram size={21} />
         </div>
         <div>
-          <FiTwitter />
+          <FiTwitter size={21} />
         </div>
         <div>
-          <SlSocialFacebook />
+          <SlSocialFacebook size={21} />
+        </div>
+        <div className={style.vector}>
+          <VectorLines />
         </div>
       </div>
     </div>
