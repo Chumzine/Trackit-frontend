@@ -29,78 +29,82 @@ export const HomePage = () => {
         <div className={style.navigation}>
           <CustomSideNav />
         </div>
-        <div className={style.welcome}>
-          <h4>👋Welcome Back, Munirah</h4>
-          <span>Let's deliver your package today</span>
-          <br />
-          <br />
-          <br />
+        <div className={style.wrapper}>
+          <div className={style.welcome}>
+            <h4>👋Welcome Back, Munirah</h4>
+            <span>Let's deliver your package today</span>
+            <br />
+            <br />
+            <br />
 
-          <div className={style.track}>
-            <h4>Track your order</h4>
-            <p>Enter your Tracking ID</p>
-            <input placeholder="Order tracking ID" />
-            <div>
-              <CustomButton className={style.searchbutton}
-              onClick={handleButtonClick}>
-                Search for package
-              </CustomButton>
+            <div className={style.track}>
+              <h4>Track your order</h4>
+              <p>Enter your Tracking ID</p>
+              <input placeholder="Order tracking ID" />
+              <div>
+                <CustomButton className={style.searchbutton}
+                onClick={handleButtonClick}>
+                  Search for package
+                </CustomButton>
+              </div>
+            </div>
+            <div className={style.activity}>
+              <h5>Activity</h5>
+              <img src={EmptyState} alt="No orders" />
+              <span>No orders Placed</span>
             </div>
           </div>
-          <div className={style.activity}>
-            <h5>Activity</h5>
-            <img src={EmptyState} alt="No orders" />
-            <span>No orders Placed</span>
-          </div>
-        </div>
-        <div className={style.profile}>
-          <div className={style.icon}>
-            <div>
-              <IoMdNotificationsOutline />
+          <div className={style.profile}>
+            <div className={style.icon}>
+              <div>
+                <IoMdNotificationsOutline />
+              </div>
+              <div>
+                <CgProfile />
+              </div>
+              <h6>Munirah Subair</h6>
+              <div>
+                <IoIosArrowDown />{" "}
+              </div>
             </div>
-            <div>
-              <CgProfile />
-            </div>
-            <h6>Munirah Subair</h6>
-            <div>
-              <IoIosArrowDown />{" "}
-            </div>
-          </div>
-          <div className={style.form}>
-            <h4>Pick up Details</h4>
-            <br />
-            <br />
-            <label>Name</label>
-            <input />
-            <br />
-            <label className={style.label}>Address</label>
-            <input /> <br />
-            <label className={style.label}>Phone number</label>
-            <input />
-          </div>
+            <div className={style.formgroup}>
+              <div className={style.form}>
+                <h4>Pick up Details</h4>
+                <br />
+                <br />
+                <label>Name</label>
+                <input />
+                <br />
+                <label className={style.label}>Address</label>
+                <input /> <br />
+                <label className={style.label}>Phone number</label>
+                <input />
+              </div>
 
-          <div className={style.formtwo}>
-            <h4>Drop off Details</h4>
-            <br />
-            <br />
-            <label>Name</label>
-            <input />
-            <br />
-            <label className={style.label}>address</label>
-            <input />
-            <br />
-            <label className={style.label}>Phone number</label>
-            <input />
-            <br />
-            <label className={style.label}>Package Type</label>
-            <input className={style.label} placeholder="package type" />
+              <div className={style.formtwo}>
+                <h4>Drop off Details</h4>
+                <br />
+                <br />
+                <label>Name</label>
+                <input />
+                <br />
+                <label className={style.label}>address</label>
+                <input />
+                <br />
+                <label className={style.label}>Phone number</label>
+                <input />
+                <br />
+                <label className={style.label}>Package Type</label>
+                <input className={style.label} placeholder="package type" />
 
-            <Link to="/signup">
-              <FiPlus /> Add another account
-            </Link>
-            <CustomButton className={style.dispatchbutton}>
-              Book dispatch
-            </CustomButton>
+                <Link to="/signup">
+                  <FiPlus /> Add another account
+                </Link>
+                <CustomButton className={style.dispatchbutton}>
+                  Book dispatch
+                </CustomButton>
+              </div>
+            </div>
           </div>
         </div>
       </div>

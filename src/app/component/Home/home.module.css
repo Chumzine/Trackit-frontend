@@ -13,7 +13,7 @@
     flex-direction: column;
 }
 
-.navigation li{
+/* .navigation li{
     padding: 10px;
     list-style: none;
 }
@@ -29,8 +29,13 @@
 .navigation li img {
     height: 10px;
     width: 15px;
+} */
+.wrapper{
+    width: 1176px;
+    height: 917px;
+    border: 0px 0px 0px 0.8px;
+    background-color: #FBFEF9;
 }
-
 .welcome h4{
     color: #000;
     font-family: 'Montserrat' sans-serif;
@@ -59,6 +64,13 @@
 .track{
     margin-left: 50px;
     margin-bottom: 40px;
+    width: 556px;
+    height: 268px;
+    padding: 26px 52px 26px 52px;
+    gap: 22px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+
 }
 .searchbutton{
      margin-top: 15px;
@@ -89,6 +101,11 @@
 
 .activity{
     margin-left: 40px;
+    width: 556px;
+    height: 474px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+
     /* text-size-adjust: 10px; */
 }
 .activity h5{
@@ -136,12 +153,16 @@
     font-weight: 600;
     margin-right: 15px;
 }
+.formgroup{
+    width: 513px;
+    height: 812px;
+    padding: 32px 63px 32px 63px;
+    gap: 10px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
 .form{
     margin-top: 10px;
-}
-.form h4{
-    
-   
 }
 
 .form h4{
