@@ -1,14 +1,14 @@
 .navmenu {
     background-color: #fff;
     width: 264px;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
-    justify-content: center;
-    position: fixed;
+    /* justify-content: center; */
 }
 .navMenuItems {
     width: 100%;
     padding-left: 0; /* Remove default padding for the list */
+    list-style: none;
 }
 .navText {
     display: flex;
@@ -16,20 +16,32 @@
     align-items: center;
     list-style: none;
     text-decoration: none;
-}
-.navMenuItems {
-    width: 100%;
-    list-style: none;
-   
+    gap: 10px;
 }
 span {
     margin-left: 16px;
 }
 .navText a {
     text-decoration: none; /* Remove text decoration only for links inside .navText */
+    color: #868080;
+    width: 58px;
+    height: 22px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
 }
 
 /* Remove default list styles */
 .navMenuItems li {
     list-style: none;
+    color: #868080;
+}
+.navMenuItems li a {
+    text-decoration: none;
+    color: #868080;
+}
+.navMenuItems li:active {
+    list-style: none;
+    text-decoration: none;
 }

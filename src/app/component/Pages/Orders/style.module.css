@@ -1,3 +1,6 @@
+.header{
+    padding: var(--app-header-padding);
+}
 .flexContainer{
     display: flex;
     gap: 200px;
@@ -28,7 +31,11 @@
     width: 20px;
    
 }
-
+.welcome{
+    background-color: #FBFEF9;
+    width: 1176px;
+    height: 917px;
+}
 .welcome h4{
     color: #000;
     font-family: 'Montserrat' sans-serif;
@@ -48,6 +55,9 @@
 .welcome input{
   margin-left: 0px;
   width: 300px;
+}
+.head{
+    display: flex;
 }
 .searchbutton{
      margin-top: 15px;
@@ -126,6 +136,9 @@
     font-size: 15px;
 
 }
+.order{
+    background-color: #FFFFFF;
+}
 .link{
     text-decoration: none;
     color: #453F3C;
@@ -144,8 +157,6 @@
     display: flex;
     gap: 40px;
     font-size: 15px;
-    
-      
 }
 .info{
     text-decoration: none;

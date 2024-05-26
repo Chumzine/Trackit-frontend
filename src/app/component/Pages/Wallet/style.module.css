@@ -1,0 +1,8 @@
+main {
+    background-color: #FFFFFF;
+}
+.wrapper {
+    width: 1176px;
+    height: 917px;
+    display: flex;
+}

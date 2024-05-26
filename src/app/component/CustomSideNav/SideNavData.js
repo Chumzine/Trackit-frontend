@@ -8,31 +8,31 @@ export const SideNavData = [
     {
         title: 'Home',
         path: '/',
-        icon: HomeLogo,
+        icon: <HomeLogo />,
         className: 'navText'
     },
     {
         title: 'Orders',
         path: '/orders',
-        icon: OrdersLogo,
+        icon: <OrdersLogo />,
         className: 'navText'
     },
     {
         title: 'Wallet',
         path: '/wallet',
-        icon: WalletLogo,
+        icon: <WalletLogo />,
         className: 'navText'
     },
     {
         title: 'Settings',
         path: '/settings',
-        icon: SettingsLogo,
+        icon: <SettingsLogo />,
         className: 'navText'
     },
     {
         title: 'Support',
         path: '/support',
-        icon: SupportLogo,
+        icon: <SupportLogo />,
         className: 'navText'
     },
 ]
