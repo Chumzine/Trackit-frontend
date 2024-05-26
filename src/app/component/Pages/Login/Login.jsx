@@ -73,8 +73,8 @@ const LoginPage = () => {
 
 
   return (
-    <div>
-      <div>
+    <div className={style.wrapper}>
+      <div className={style.header}>
         <img src={Logo} alt="trackit logo" />
       </div>
       <div className={style.container}>

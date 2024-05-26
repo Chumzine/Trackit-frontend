@@ -2,6 +2,7 @@
 
 section {
     background-color: #FFFFFF;
+    padding-bottom: 50px;
 }
 header {
     padding: var(--app-header-padding);
@@ -11,12 +12,12 @@ main {
     justify-content: center;
     align-items: center;
     gap: 70px;
+    padding-left: 30px;
 }
 .container {
     background-color: #FBFEF9;
-    width: 725px;
+    width: 695px;
     height: 702px;
-    top: 161px;
     left: 95px;
     border-radius: 50px;
     display: flex;
@@ -32,6 +33,7 @@ main {
     line-height: 28.8px;
     text-align: left;
     color: #310D07;
+    margin-bottom: 130px;
 }
 /* .form-input {
     width: 387px;
@@ -72,7 +74,7 @@ main {
     gap: 5px;
 }
 .check label {
-    padding-top: 3px;
+    padding-top: 8px;
     width: 314px;
     height: 17px;
     color: #000000;
