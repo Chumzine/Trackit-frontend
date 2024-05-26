@@ -32,7 +32,7 @@ export const Footer = () => {
               <a href="!#">Terms of service</a>
             </li>
             <li>
-              <a href="!#">Privacy</a>
+              <a href="!#">Privacy policy</a>
             </li>
           </ul>
         </div>

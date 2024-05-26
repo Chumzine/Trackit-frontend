@@ -73,7 +73,7 @@
     border-radius: 20px;
     font-family:' Montserrat';
     margin-left: 160px;
-   
+    margin-top: 5px;
 }
 .getUpdate p {
     text-align: center;
@@ -87,7 +87,7 @@
 }
 
 .button{
-    margin-top: 25px;
+    margin-top: 18px;
     margin-left: 100px;
     background-color: #F44322;
     width: 200px;
