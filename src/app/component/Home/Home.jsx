@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import EmptyState from "../../assets/icons/EmptyState.svg";
 // import { useHistory } from "react-router-dom";
 import CustomButton from "../CustomButton/CustomButton";
-import { IoMdNotificationsOutline } from "react-icons/io";
+import { ReactComponent as CGProfile } from "../../assets/icons/profile-pic.svg";
 import { IoIosArrowDown } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
+import { ReactComponent as NotificationsOutline } from "../../assets/icons/bell.svg";
 import { FiPlus } from "react-icons/fi";
 import { CustomSideNav } from "../CustomSideNav/CustomSideNavigation";
 
@@ -56,14 +56,14 @@ export const HomePage = () => {
           </div>
           <div className={style.profile}>
             <div className={style.icon}>
-              <div>
-                <IoMdNotificationsOutline />
+              <div className={style.icona}>
+                <NotificationsOutline />
               </div>
-              <div>
-                <CgProfile />
+              <div className={style.iconb}>
+                <CGProfile />
               </div>
               <h6>Munirah Subair</h6>
-              <div>
+              <div className={style.iconc}>
                 <IoIosArrowDown />{" "}
               </div>
             </div>
@@ -75,9 +75,9 @@ export const HomePage = () => {
                 <label>Name</label>
                 <input />
                 <br />
-                <label className={style.label}>Address</label>
+                <label>Address</label>
                 <input /> <br />
-                <label className={style.label}>Phone number</label>
+                <label>Phone number</label>
                 <input />
               </div>
 
@@ -88,14 +88,17 @@ export const HomePage = () => {
                 <label>Name</label>
                 <input />
                 <br />
-                <label className={style.label}>address</label>
+                <label>Address</label>
                 <input />
                 <br />
-                <label className={style.label}>Phone number</label>
+                <label>Phone number</label>
                 <input />
                 <br />
-                <label className={style.label}>Package Type</label>
-                <input className={style.label} placeholder="package type" />
+                <label>Package Type</label>
+                <div className={style.input}>
+                  <p>Select Package Type</p>
+                  <IoIosArrowDown color="#292D32" />
+                </div>
 
                 <Link to="/signup">
                   <FiPlus /> Add another account
