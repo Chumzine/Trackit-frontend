@@ -17,7 +17,9 @@ export const Support = () => {
             <CustomSideNav />
             <div className={style.container}>
                 <div>
-                    <MainHeader />
+                    <MainHeader>
+                        <h2>Support</h2>
+                    </MainHeader>
                 </div>
                 <div className={style['content-container']}>
                     <div className={style.flexone}>

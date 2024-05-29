@@ -98,7 +98,7 @@ export const SignupPage = () => {
                         </div>
                     </form>
                     <div className={style.login}>
-                        <p>Already have an account? <a href="!#">Log in</a></p>
+                        <p>Already have an account? <a href="login">Log in</a></p>
                     </div>
                 </div>
                 <div className={style.preview}>

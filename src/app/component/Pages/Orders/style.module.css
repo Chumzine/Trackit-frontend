@@ -1,11 +1,11 @@
+.header{
+    padding: var(--app-header-padding);
+}
 .flexContainer{
     display: flex;
-    gap: 300px;
+    gap: 200px;
     padding: 30px;
     
-}
-.logoDiv{
-    border-bottom: 1px solid #f0eeee;
 }
 
 .form{
@@ -21,7 +21,7 @@
 .navigation li a{
     color: #453F3C;
     font-family: "Montserrat" sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
 }
@@ -29,26 +29,35 @@
 .navigation li img {
     height: 15px;
     width: 20px;
+   
 }
-
+.welcome{
+    background-color: #FBFEF9;
+    width: 1176px;
+    height: 917px;
+}
 .welcome h4{
     color: #000;
     font-family: 'Montserrat' sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-right: 200px;
 }
 .welcome span{
     color: #000;
     font-family: "Montserrat" sans-serif;
-    font-size: 13px;
+    font-size: 8px;
     font-style: normal;
     font-weight: 300;
 }
 .welcome input{
   margin-left: 0px;
   width: 300px;
+}
+.head{
+    display: flex;
 }
 .searchbutton{
      margin-top: 15px;
@@ -69,6 +78,7 @@
     
 
 }
+
 .activity{
     display: flex;
     justify-content: center;
@@ -76,19 +86,20 @@
 .activity h5{
     color: #000;
     font-family:' Montserrat'sans-serif ;
-    font-size: 24px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
 }
 .activity img{
     display: flex;
     justify-content: center;
+    margin-right: 20px;
 }
 .activity span{
     color: #000;
     text-align: center;
     font-family: 'Montserrat' sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 300;
     margin-left: 20px;
@@ -97,9 +108,10 @@
 }
 .icon{
     display: flex;
-    
-    gap: 30px;
+    gap: 20px;
     padding: 30px;
+    
+   
 }
 .icon div{
     color: #848484;
@@ -112,7 +124,7 @@
     margin-top: -3px;
     color: #000;
     font-family:' Montserrat' sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 600;
 }
@@ -121,7 +133,11 @@
     flex-direction: row;
     gap: 30px;
     position: fixed;
+    font-size: 15px;
 
+}
+.order{
+    background-color: #FFFFFF;
 }
 .link{
     text-decoration: none;
@@ -140,7 +156,7 @@
     margin-left: 300px;
     display: flex;
     gap: 40px;
-      
+    font-size: 15px;
 }
 .info{
     text-decoration: none;

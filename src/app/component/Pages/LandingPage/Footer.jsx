@@ -1,6 +1,7 @@
 import style from "./footer.module.css";
 import CustomButton from "../../CustomButton/CustomButton";
 import logosvg from "../../../assets/icons/logo.svg.svg";
+import { ReactComponent as VectorLines } from "../../../assets/icons/vector-lines.svg"
 
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -12,7 +13,7 @@ export const Footer = () => {
     <div className={style.containerDiv}>
       <div className={style.footerContainer}>
         <div className={style.logoContainer}>
-          <img src={logosvg} />
+          <img src={logosvg} alt="Trackit logo" />
         </div>
         <div className={style.contact}>
           <h6>Contact us</h6>
@@ -25,13 +26,13 @@ export const Footer = () => {
           <h6>COMPANY</h6>
           <ul>
             <li>
-              <a href="#">Ride with us</a>
+              <a href="!#">Ride with us</a>
             </li>
             <li>
-              <a href="#">Terms of service</a>
+              <a href="!#">Terms of service</a>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <a href="!#">Privacy policy</a>
             </li>
           </ul>
         </div>
@@ -50,13 +51,16 @@ export const Footer = () => {
       </div>
       <div className={style.icon}>
         <div>
-          <FaInstagram />
+          <FaInstagram size={21} />
         </div>
         <div>
-          <FiTwitter />
+          <FiTwitter size={21} />
         </div>
         <div>
-          <SlSocialFacebook />
+          <SlSocialFacebook size={21} />
+        </div>
+        <div className={style.vector}>
+          <VectorLines />
         </div>
       </div>
     </div>

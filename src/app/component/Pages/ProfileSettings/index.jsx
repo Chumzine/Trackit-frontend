@@ -35,6 +35,10 @@ export const Profile = () => {
                 body: JSON.stringify(profile)
             });
 
+            if (!response.ok) {
+                throw new Error('Failed to update. Please try again later.');
+            }
+
             // Handle successful update
             alert('Update successful!');
 
@@ -61,7 +65,9 @@ export const Profile = () => {
             <CustomSideNav />
             <div className={style.content}>
                 <div>
-                    <MainHeader />
+                    <MainHeader>
+                        <h2>Profile</h2>
+                    </MainHeader>
                 </div>
                 <div className={style['form-container']}>
                     <DisplayPicIcon />
