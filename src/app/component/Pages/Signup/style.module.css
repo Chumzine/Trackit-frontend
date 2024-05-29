@@ -86,10 +86,7 @@ main {
 .create {
     width: 180px;
     height: 54px;
-    top: 550px;
-    left: 266px;
     padding: 10px;
-    gap: 10px;
     border-radius: 4px;
     background-color: #F44322;
     border: none;
@@ -99,7 +96,6 @@ main {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
-    line-height: 19.2px;
 }
 .create:hover {
     background-color:rgb(240, 12, 12);

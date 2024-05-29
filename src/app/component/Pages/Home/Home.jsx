@@ -1,15 +1,15 @@
 import React from "react"
 import style from "./home.module.css";
-import logosvg from "../../assets/icons/logo.svg.svg";
+import logosvg from "../../../assets/icons/logo.svg.svg";
 import { Link } from "react-router-dom";
-import EmptyState from "../../assets/icons/EmptyState.svg";
+import EmptyState from "../../../assets/icons/EmptyState.svg";
 // import { useHistory } from "react-router-dom";
-import CustomButton from "../CustomButton/CustomButton";
-import { ReactComponent as CGProfile } from "../../assets/icons/profile-pic.svg";
+import CustomButton from "../../CustomButton/CustomButton";
+import { ReactComponent as CGProfile } from "../../../assets/icons/profile-pic.svg";
 import { IoIosArrowDown } from "react-icons/io";
-import { ReactComponent as NotificationsOutline } from "../../assets/icons/bell.svg";
+import { ReactComponent as NotificationsOutline } from "../../../assets/icons/bell.svg";
 import { FiPlus } from "react-icons/fi";
-import { CustomSideNav } from "../CustomSideNav/CustomSideNavigation";
+import { CustomSideNav } from "../../CustomSideNav/CustomSideNavigation";
 
 
 
