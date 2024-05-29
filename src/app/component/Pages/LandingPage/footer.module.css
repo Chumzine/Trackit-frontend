@@ -108,7 +108,7 @@
 }
 
 .getUpdate input{
-    border: 1px solid #c0baba;
+    border: 1px solid #464646;
     width: 350px;
     padding: 10px;
     border-radius: 5px;  
@@ -117,8 +117,9 @@
 .getUpdate label{
     display: block;
     margin-left: 20px;
-    color: #4b4949;
+    color: #222222;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .icon{

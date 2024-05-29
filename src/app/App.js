@@ -6,7 +6,7 @@ import LoginPage from './component/Pages/Login/Login';
 import { SignupPage } from './component/Pages/Signup';
 import { Profile } from './component/Pages/ProfileSettings';
 import { Support } from './component/Pages/Support';
-import { HomePage } from "./component/Home/Home";
+import { HomePage } from "./component/Pages/Home/Home";
 import { Orders } from "./component/Pages/Orders/index";
 import { IsProtectedRoute } from './hoc/IsProtectedRoute';
 // import { CustomSideNav } from "./component/CustomSideNav/CustomSideNavigation";
@@ -14,6 +14,7 @@ import { Tracking } from "./component/Pages/Tracking/Tracking";
 import Chatbox from "./component/Pages/Chatbot/index";
 import { PayStack } from "./component/Pages/Payment";
 import { Wallet } from "./component/Pages/Wallet";
+import { WebReceipt } from "./component/Pages/Receipt";
 
 
 const router = createBrowserRouter([
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
   {
     path: 'payment',
     element: <PayStack />
+  },
+  {
+    path: 'receipt',
+    element: <WebReceipt />
   },
   {
     path: '*',

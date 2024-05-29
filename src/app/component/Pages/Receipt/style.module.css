@@ -1,0 +1,74 @@
+main {
+    background-color: #FFFFFF;
+}
+.container {
+    width: 387px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.container h1 {
+    font-family: "Montserrat" sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #310D07;
+    padding-top: 50px;
+}
+.details {
+    display: flex;
+    gap: 185px;
+}
+.container h4 {
+    font-family: "Montserrat" sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #310D07;
+}
+.details p {
+    font-family: "Montserrat" sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #868080;
+}
+.details .para1, .para2 {
+    color: #F44322;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.details .para1 {
+    margin-left: 28px;
+}
+.tracking-no {
+    display: flex;
+    gap: 240px;
+}
+.tracking-no p {
+    font-family: "Montserrat" sans-serif;
+    color: #525252;
+    font-size: 18px;
+    font-weight: 600;
+}
+.fee {
+    display: flex;
+    gap: 264px;
+}
+.fee p {
+    font-family: "Montserrat" sans-serif;
+    color: #868080;
+    font-size: 18px;
+    font-weight: 600;
+}
+.button {
+    width: 387px;
+    height: 54px;
+    background-color: #F44322;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    font-family: "Montserrat" sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+}
