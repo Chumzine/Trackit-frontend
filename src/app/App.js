@@ -1,4 +1,5 @@
 import "./App.css";
+import "leaflet/dist/leaflet.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import VerifyWithOTP from "./component/Pages/Verify/Verify";
 import { LandingPage } from "./component/Pages/LandingPage/LandingPage";
@@ -9,12 +10,14 @@ import { Support } from './component/Pages/Support';
 import { HomePage } from "./component/Pages/Home/Home";
 import { Orders } from "./component/Pages/Orders/index";
 import { IsProtectedRoute } from './hoc/IsProtectedRoute';
-// import { CustomSideNav } from "./component/CustomSideNav/CustomSideNavigation";
 import { Tracking } from "./component/Pages/Tracking/Tracking";
-import Chatbox from "./component/Pages/Chatbot/index";
 import { PayStack } from "./component/Pages/Payment";
 import { Wallet } from "./component/Pages/Wallet";
 import { WebReceipt } from "./component/Pages/Receipt";
+import Chatbot from "./component/Pages/Chatbot/ChatBot";
+import RiderInfo from "./component/Pages/Tracking/Riderweb2";
+import RiderStatus from "./component/Pages/Tracking/Riderweb1";
+import CancelConfirmation from "./component/Pages/Tracking/Cancelrequest";
 
 
 const router = createBrowserRouter([
@@ -51,8 +54,8 @@ const router = createBrowserRouter([
     )
   },
   {
-     path: "chatbox",
-     element: <Chatbox />,
+     path: "chatbot",
+     element: <Chatbot />,
   },
   {
     path: 'settings',
@@ -73,6 +76,18 @@ const router = createBrowserRouter([
   {
     path: 'receipt',
     element: <WebReceipt />
+  },
+  {
+    path: "confirmorder2",
+    element: <RiderInfo />,
+  },
+  {
+    path: "confirmorder",
+    element: <RiderStatus />,
+  },
+  {
+    path: "cancelrequest",
+    element: <CancelConfirmation />,
   },
   {
     path: '*',

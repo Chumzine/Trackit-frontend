@@ -66,6 +66,12 @@
     line-height: 30px;
 }
 
+.getUpdate {
+    width: 429px;
+    height: 300px;
+    margin-right: 120px;
+}
+
 .getUpdate form{
     width: 400px;
     height: 295px;
@@ -81,13 +87,13 @@
     padding: 20px;
     font-size: 20px;
     font-weight: 400;
-    color: #000;
+    color: #040404;
     font-family: 'Monstserrat' sans-serif;
-   
+    margin-bottom: 0px;
 }
 
-.button{
-    margin-top: 18px;
+.getUpdate .button{
+    margin-top: 25px;
     margin-left: 100px;
     background-color: #F44322;
     width: 200px;
@@ -97,29 +103,29 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-family: 'monstserrat'sans-serif;
+    font-family: 'Monstserrat' sans-serif;
     font-size: 13px;
     font-weight: 400;
     border: none;
     border-radius: 5px;
 }
 .button:hover{
-    background-color: #F44322;
+    opacity: 0;
 }
 
 .getUpdate input{
     border: 1px solid #464646;
     width: 350px;
+    height: 40px;
     padding: 10px;
     border-radius: 5px;  
-    margin-left:20px ;
+    margin-left: 20px;
 }
 .getUpdate label{
     display: block;
     margin-left: 20px;
     color: #222222;
     margin-bottom: 5px;
-    font-size: 14px;
 }
 
 .icon{

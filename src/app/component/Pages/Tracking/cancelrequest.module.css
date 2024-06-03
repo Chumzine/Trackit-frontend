@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 200px;
+}
+  
+  
+p {
+    margin: 10px 0;
+    color: #333;
+  font-family:'montserrat' sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  color: #310D07;
+  
+}
+  
+.cancelButton {
+    margin: 20px 0 10px 0;
+    padding: 10px 20px;
+    background-color: #F44322;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    text-decoration: none;
+    font-family: 'montserrat' sans-serif;
+    font-size: 18px;
+    font-weight: 600;  
+}
+  
+.cancelButton:hover {
+    background-color: #F44322;
+}
+  
+.waitButton {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #F44322;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    font-family: 'montserrat' sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;   
+}
+  
+@media (max-width: 600px) {
+    .container {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .cancelButton, .waitButton {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+}
+  

@@ -39,25 +39,28 @@
   margin-bottom: -10px;
 }
 .card2 img, .card3 img {
-  margin-top: 40px;
+  margin-top: 35px;
+}
+.card1 img {
+  margin-top: 15px;
 }
 
 .description{
-color: #000;
-text-align: center;
-margin-top: 20px;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 120%;
+  color: #000;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
 }
- .name{
-    color: #000;
-    display: flex;
-    justify-content: center;
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
+.name{
+  color: #000;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }

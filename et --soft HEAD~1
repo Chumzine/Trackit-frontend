@@ -1,0 +1,103 @@
+[33m0c6575d[m[33m ([m[1;36mHEAD -> [m[1;32mAda[m[33m)[m footer and testimonials styling correction
+[33m763176f[m[33m ([m[1;31morigin/Ada[m[33m)[m Merge pull request #50 from Chumzine/dev
+[33med2e9e0[m[33m ([m[1;31morigin/dev[m[33m)[m Merge pull request #49 from Chumzine/Ada
+[33m7805d69[m Merge pull request #48 from Chumzine/Aanu
+[33m5fa39fa[m Merge branch 'dev' into Aanu
+[33m548c28e[m created web receipt page with its style
+[33m833e37d[m[33m ([m[1;31morigin/Aanu2[m[33m)[m Resolved merge conflicts
+[33m6cc076f[m corrected home page css
+[33m63c813e[m Merge pull request #46 from Chumzine/Ada
+[33m584eea5[m adjusted the form on the landingpage
+[33mc4f5cbe[m Merge branch 'main' into dev
+[33m896cbe2[m Merge pull request #42 from Chumzine/snyk-fix-3ae8494e28c131a4ffcae0984ad9ab9e
+[33m3dcb8e7[m Merge pull request #43 from Chumzine/snyk-upgrade-76bb5ed5898a165ddebc068de29467b6
+[33me39a030[m Merge pull request #44 from Chumzine/Ada
+[33m7ca7f59[m corrected some issues with the side navigation
+[33m8f977a2[m[33m ([m[1;31morigin/snyk-upgrade-76bb5ed5898a165ddebc068de29467b6[m[33m)[m fix: upgrade react-icons from 5.1.0 to 5.2.0
+[33mfdead0b[m worked on the sdtyling for the landing page
+[33m49401e5[m[33m ([m[1;31morigin/snyk-fix-3ae8494e28c131a4ffcae0984ad9ab9e[m[33m)[m fix: package.json & package-lock.json to reduce vulnerabilities
+[33m537d5b8[m Merge pull request #41 from Chumzine/main
+[33m51b330b[m Merge pull request #40 from Chumzine/main
+[33m3ee6e12[m Merge pull request #39 from Chumzine/dev
+[33m5184231[m Merge pull request #36 from Chumzine/main
+[33me9afb35[m Merge pull request #35 from Chumzine/Ada
+[33m5a0ee8e[m Merge pull request #34 from Chumzine/main
+[33mc7bab66[m Merge pull request #33 from Chumzine/main
+[33me1c8eb6[m Merge pull request #31 from Chumzine/dev
+[33m23f726a[m Merge pull request #30 from Chumzine/main
+[33m45ee959[m Merge pull request #29 from Chumzine/main
+[33m7dc5955[m Merge pull request #27 from Chumzine/Aisha
+[33mfbe3eac[m Merge pull request #26 from Chumzine/Aanu
+[33m8563213[m Merge pull request #25 from Chumzine/main
+[33m489b4e0[m Merge branch 'Aisha' into main
+[33md2c0cd5[m Merge pull request #24 from Chumzine/main
+[33m57747bf[m Merge pull request #23 from Chumzine/Ada
+[33m98e8906[m Merge pull request #22 from Chumzine/dev
+[33mf74f923[m Merge pull request #21 from Chumzine/main
+[33m3ed32ce[m Merge pull request #20 from Chumzine/main
+[33m85660f3[m Update Login.jsx
+[33mc3b41c7[m Update Hero.jsx
+[33m7e3cf16[m added necessary styles
+[33mf57f568[m updated css styling
+[33mdfb37d7[m added css styles
+[33m9ffae73[m Updated App.js
+[33m1b35e68[m Fix styling in SideNavigation.css
+[33medc5d16[m Resolve merge conflicts in package-lock.json
+[33maaff0b5[m syntax errors
+[33ma38df06[m Styled login module CSS file
+[33mc23eafc[m Update Login.jsx
+[33m4bd08de[m Update Testimonial.jsx
+[33m75d1457[m Update Tracking.jsx
+[33mad0544a[m Update index.jsx
+[33m8590a56[m Update index.jsx
+[33m1f57318[m Update index.jsx
+[33m41cf0fc[m Update index.jsx
+[33mc981f02[m Update style.module.css
+[33m66d02e2[m Update index.jsx
+[33m875af54[m Update Login.jsx
+[33m3c65c8f[m Update Login.jsx
+[33mcc1d72b[m Update Testimonial.jsx
+[33mc7d4059[m Update LandingPage.jsx
+[33mebe38d8[m Update Hero.jsx
+[33m4a9c129[m Update Home.jsx
+[33m02b1c47[m Update App.js
+[33m6cbb0d7[m Update SideNavigation.css
+[33m954c4ed[m Update App.js
+[33me25e102[m Merge pull request #19 from Chumzine/dev
+[33m3522a03[m Merge branch 'main' into dev
+[33mde03246[m first commit
+[33m00b56d8[m Merge pull request #18 from Chumzine/Ada
+[33m996f8d8[m Fixed an error with the node_modules, corrected some imports and added the alt atribute for some pages
+[33m9e384a0[m Merge pull request #17 from Chumzine/Aanu
+[33m370b2e3[m Resolved merge conflicts
+[33m441d7ac[m my first commit
+[33md872fda[m Revert "conflict changes"
+[33m84ead5c[m conflict changes
+[33m897d461[m Update package-lock.json
+[33m76bd990[m Resolve merge conflict in src/app/App.js
+[33m7eab73e[m updated src/App.js
+[33mf16051c[m Merge pull request #16 from Chumzine/dev
+[33mb40569f[m Merge pull request #15 from Chumzine/main
+[33mb4e2baa[m Merge pull request #14 from Chumzine/main
+[33m3348edf[m Merge pull request #13 from Chumzine/Ada
+[33mde50dd0[m Merge pull request #12 from Chumzine/Ada
+[33mc6f9061[m Merge pull request #11 from Chumzine/Aanu
+[33m95b2549[m Merge branch 'dev' into Aanu
+[33m377aad8[m -CustomSideNav -Home -Order pages
+[33m13bb2ea[m Merge pull request #10 from Chumzine/main
+[33mc5f6e50[m Merge pull request #9 from Chumzine/dev
+[33md361c8f[m Merge pull request #8 from Chumzine/main
+[33m260c2a7[m Merge pull request #7 from Chumzine/dev
+[33md012363[m Merge pull request #6 from Chumzine/Ada
+[33m78ebf60[m Merge pull request #5 from Chumzine/Ada
+[33md7dab3f[m Merge pull request #4 from Chumzine/main
+[33m96e43cb[m Merge pull request #3 from Chumzine/dev
+[33mccdf189[m[33m ([m[1;32mdev[m[33m)[m Added routing for profile and support pages
+[33m3697d69[m Merge pull request #2 from Chumzine/Ada
+[33m7829562[m Merge branch 'dev' into Ada
+[33m5250e20[m created profile and support pages with functionality awaiting styling
+[33m74fa9cc[m Merge pull request #1 from Chumzine/Aanu
+[33mafa3e08[m -worked on landing page
+[33mc88abb1[m styling for signup page >- corrected styling for login page
+[33m20b1f6b[m[33m ([m[1;32mmain[m[33m)[m created new project directory
+[33meb4c8b2[m Initialize project using Create React App

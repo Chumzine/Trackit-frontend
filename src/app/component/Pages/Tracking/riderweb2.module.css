@@ -1,0 +1,253 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    border-radius: 16px;
+    overflow: hidden;
+}
+  
+.mapContainer {
+    width: 100%;
+    height: 250px;
+}
+  
+.map {
+    width: 100%;
+    height: 100%;
+}
+  
+.statusContainer {
+    padding: 20px;
+    text-align: center;
+}
+  
+.detailsContainer {
+    margin-top: 20px;
+}
+  
+  
+.pickupDetails {
+    text-align: left;
+}
+  
+.pickupDetails h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+  
+.pickupDetails p {
+    margin: 0 0 5px 0;
+    color: #555;
+}
+  
+.editLink {
+    color: #F44322;
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.cancelButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #F44322;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+  
+.cancelButton:hover {
+    background-color: #F44322;
+}
+  
+  
+@media (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      margin: 0 10px;
+      border-radius: 8px;
+    }
+  
+    .statusContainer {
+      padding: 15px;
+    }
+  
+    .detailsContainer {
+      margin-top: 15px;
+    }
+  
+    .progressIcon {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .progressBar::after {
+      width: 30px;
+    }
+  
+    .cancelButton {
+      padding: 8px 16px;
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  /* .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  } */
+  
+  /* .mapContainer {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .status {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  } */
+  
+.riderDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;  
+}
+.timer{
+    display: flex;
+    margin-top: 30px;
+}
+  
+.riderImage {
+    display: flex;
+    position: absolute;
+    top: 56%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: none;  
+}
+  
+.details {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+    color: #555;
+    border: 1px solid #949792;
+    border-radius: 20px;
+    width: 400px;
+    height: 190px;
+    align-items: center;
+}
+.divider{
+    border-right: 1px solid #F44322;
+    height: 80px;   
+}
+  
+.actions {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+  
+.callButton,
+.messageButton,
+.cancelButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.callButton {
+    background-color: #FBFEF9;
+    color: #F44322;
+    z-index: 2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: #000000;
+    margin-right: -700px;
+    margin-top: -45px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+  
+.messageButton {
+    background-color: #FBFEF9;
+    color: #F44322;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    box-shadow: #000000;
+    margin-left: 100px;
+    margin-top: -45px;
+}
+  
+.cancelButton {
+    margin-top: -10px;
+    background: none;
+    color: #F44322;
+    width: 100%;
+    max-width: 250px;
+    font-family: 'monsterrat' sans-serif; 
+    font-size: 20px;
+    font-weight: 700;
+}
+  
+.cancelButton:hover {
+   background: none;
+}
+  
+@media (max-width: 600px) {
+    .container {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .mapContainer {
+      height: 150px;
+    }
+  
+    .status {
+      font-size: 16px;
+    }
+  
+    .details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .callButton, .messageButton, .cancelButton {
+      padding: 10px;
+      width: 100%;
+    }
+}
+  
