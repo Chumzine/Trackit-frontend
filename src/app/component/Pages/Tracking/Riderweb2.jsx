@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./riderweb2.module.css";
-import { Link } from "react-router-dom";
 import felix from "../../../assets/icons/felix.svg";
 import { IoCallOutline } from "react-icons/io5";
 import { TbMessage } from "react-icons/tb";

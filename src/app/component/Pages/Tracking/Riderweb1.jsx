@@ -31,7 +31,7 @@ const RiderStatus = () => {
             <p>Munirah Subair</p>
             <p>08123456789</p>
             <p>3, Yaba Lagos</p>
-            <a href="#" className={style.editLink}>
+            <a href="home" className={style.editLink}>
               Edit
             </a>
           </div>
