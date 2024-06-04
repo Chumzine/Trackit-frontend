@@ -65,7 +65,7 @@ export const SignupPage = () => {
             <header>
                 <img src={Logo} alt="trackit logo" />
             </header>
-            <main className={style.main}>
+            <main className={style.main} style= {{flexDirection:"row"}}>
                 <div className={style.container}>
                     <h2>Create an account</h2> 
                     <form onSubmit={handleSubmit}>

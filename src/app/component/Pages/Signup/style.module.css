@@ -15,17 +15,18 @@ header {
     margin-left: 50px;
     /* padding-left: 30px; */
 }
+
+
 .container {
     background-color: #FBFEF9;
     width: 695px;
     height: 702px;
-    left: 95px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
 }
 .container h2 {
     font-family: Montserrat;
@@ -34,7 +35,8 @@ header {
     line-height: 28.8px;
     text-align: left;
     color: #310D07;
-    margin-bottom: 130px;
+    margin-bottom: 100px;
+    padding-top: 30px;
 }
 /* .form-input {
     width: 387px;
@@ -48,10 +50,13 @@ header {
 .container input {
     margin-left: 0px;
 }
+form {
+    padding-top: 40px;
+}
 .form-input input {
     width: 387px;
     height: 45px;
-    gap: 8px;
+    gap: 6px;
 
     padding: 16px 8px 16px 8px;
     border-radius: 4px;
@@ -75,7 +80,7 @@ header {
     gap: 5px;
 }
 .check label {
-    padding-top: 8px;
+    padding-top: 9px;
     width: 314px;
     height: 17px;
     color: #000000;
@@ -85,18 +90,19 @@ header {
     color: #F44322;
 }
 .create {
-    width: 180px;
+    width: 200px;
     height: 54px;
     padding: 10px;
     border-radius: 4px;
     background-color: #F44322;
     border: none;
     color: #FFFFFF;
-    margin-left: 100px;
+    margin-left: 90px;
     cursor: pointer;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
+    margin-top: -25px;
 }
 .create:hover {
     background-color:rgb(240, 12, 12);
