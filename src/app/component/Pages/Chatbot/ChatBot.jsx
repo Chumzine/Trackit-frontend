@@ -5,6 +5,7 @@ import ChatWindow from "./ChatWindow";
 import ChatInput from "./ChatInput";
 import axios from "axios";
 import  { useState } from 'react';
+import config from "../../../config";
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
@@ -23,7 +24,7 @@ const Chatbot = () => {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `sk-proj-RdnDuLcBaT355tcCX1MlT3BlbkFJdjZiMNNpBolyQf4aF6TI`,
+            Authorization: config.apiKey,
           },
         }
       );

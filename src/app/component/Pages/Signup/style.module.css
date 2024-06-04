@@ -7,12 +7,13 @@ section {
 header {
     padding: var(--app-header-padding);
 }
-main {
+.main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    padding-left: 30px;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 50px;
+    margin-left: 50px;
+    /* padding-left: 30px; */
 }
 .container {
     background-color: #FBFEF9;
@@ -110,7 +111,4 @@ main {
 .preview {
     width: 434.69px;
     height: 325px;
-    top: 357px;
-    left: 907px;
-    gap: 0px;
 }
