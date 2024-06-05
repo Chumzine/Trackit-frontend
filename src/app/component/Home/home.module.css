@@ -1,11 +1,11 @@
 .flexContainer{
     display: flex;
-    gap: 120px;
-    padding: 30px;
+    gap: 80px;
     
 }
 .logoDiv{
-    border-bottom: 1px solid #f0eeee;
+    border-bottom: 2px solid #f0eeee;
+    padding: 25px 69px 25px;
 }
 
 .form{
@@ -13,67 +13,62 @@
     flex-direction: column;
 }
 
-/* .navigation li{
-    padding: 10px;
-    list-style: none;
-}
-
-.navigation li a{
-    color: #453F3C;
-    font-family: "Montserrat" sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.navigation li img {
-    height: 10px;
-    width: 15px;
-} */
 .wrapper{
     width: 1176px;
     height: 917px;
     border: 0px 0px 0px 0.8px;
     background-color: #FBFEF9;
+    display: flex;
+    margin-left: -130px;
+    padding: 20px 0px 45px 0px;
+    gap: 10px;
 }
 .welcome h4{
-    color: #000;
+    color: #310D07;
     font-family: 'Montserrat' sans-serif;
-    font-size: 15px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    
-}
-.welcome p{
-    
-    
+    padding-left: 30px;
 }
 
 .welcome span{
     color: #000;
     font-family: "Montserrat" sans-serif;
-    font-size: 11px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    
+    margin-left: 35px;
 }
 .welcome input{
   margin-left: 0px;
   width: 300px;
 }
 .track{
-    margin-left: 50px;
+    margin-left: 40px;
     margin-bottom: 40px;
-    width: 556px;
+    width: 456px;
     height: 268px;
     padding: 26px 52px 26px 52px;
-    gap: 22px;
+    /* gap: 22px; */
     border-radius: 40px;
     background-color: #FFFFFF;
 
 }
+.track h4{
+    font-size: 24px;
+    color: #310D07;
+    font-weight: 700;
+    font-family: "Montserrat" sans-serif;
+}
+.track input{
+    border-radius: 4px;
+    background-color: #F6F6F6;
+    border: 1px solid #000000;
+    padding: 4px;
+}
 .searchbutton{
-     margin-top: 15px;
+    margin-top: 15px;
     background-color: #F44322;
     width: 300px;
     height: 40px;
@@ -95,13 +90,16 @@
 .track p{
     margin-top: 20px;
     margin-bottom: 20px;
-
+    color: #040404;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Montserrat" sans-serif;
 }
 
 
 .activity{
     margin-left: 40px;
-    width: 556px;
+    width: 456px;
     height: 474px;
     border-radius: 30px;
     background-color: #FFFFFF;
@@ -109,33 +107,46 @@
     /* text-size-adjust: 10px; */
 }
 .activity h5{
-    color: #000;
-    font-family:' Montserrat'sans-serif ;
-    font-size: 15px;
+    color: #310D07;
+    font-family: 'Montserrat' sans-serif ;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
+    margin-left: 50px;
+    padding-top: 20px;
 }
 .activity img{
     display: flex;
     justify-content: center; 
-    margin-top: 30px;
-    margin-left: 80px;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 150px;
 }
 .activity span{
     color: #000;
     text-align: right;
     font-family: 'Montserrat' sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     margin-right: 1px;
     margin-top: 10px;
-  
+    margin-left: 170px;
 }
 .icon{
     display: flex;
-    gap: 20px;
-    padding: 30px;
+    gap: 10px;
+    padding: 10px;
+    margin-left: 180px;
+}
+.icona{
+    padding-right: 50px;
+}
+.iconb{
+    padding-right: 10px;
+}
+.iconc{
+    padding-top: 6px;
 }
 .icon div{
     color: #848484;
@@ -145,7 +156,7 @@
     justify-self: center;
 }
 .icon h6{
-    margin-top: 3px;
+    margin-top: 6px;
     color: #000;
     font-family:' Montserrat' sans-serif;
     font-size: 15px;
@@ -162,7 +173,9 @@
     background-color: #FFFFFF;
 }
 .form{
-    margin-top: 10px;
+    margin-top: 25px;
+    width: 387px;
+
 }
 
 .form h4{
@@ -179,23 +192,23 @@
 .form label{
    margin-left:10px;
    font-size: 12px;
+   margin-top: 13px;
+   color: #222222;
 }
 .form input{
     margin-left: 10px;
-    width: 450px;
-    height: 30px;
+    width: 387px;
+    height: 45px;
     margin-bottom: -30px;
-
+    color: #464646;
+    border-radius: 4px;
     
-}
-.form .label{
-    margin-top: 10px;
 }
 
 .formtwo h4{
     margin: -25px;
     margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 45px;
     color: #310D07;
     font-family: 'Montserrat' sans-serif;
     font-size: 15px;
@@ -203,30 +216,28 @@
     font-weight: 700;
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 1px;
 }
 
 .formtwo{
     display: flex;
     flex-direction: column;
     margin-bottom: -35px;
-   
+    width: 387px;
 }
 
 .formtwo label{
    margin-left: 10px;
    font-size: 12px;
+   margin-top: -25px;
+   color: #222222;
 }
 .formtwo input{
     margin-left: 10px;
-    width: 450px;
-    height: 30px;
-    
-}
-.formtwo .label{
-   margin-top: -25px;
-   font-size: 12px;
-   
+    width: 387px;
+    height: 45px;
+    border-radius: 4px;
+    color: #464646;
 }
 .formtwo a{
     color: var(--Primary-Color, #F44322);
@@ -256,8 +267,26 @@
 .packageInput{
     margin-top: 5px
 }
+.formtwo .input{
+    border: 1px solid #cecaca;
+    width: 387px;
+    height: 45px;
+    border-radius: 4px;
+    margin-left: 10px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    margin-top: 6px;
+    gap: 230px;
+}
+.formtwo .input p{
+    color: #a8a3a3;
+    font-size: 14px;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 400;
+}
 .dispatchbutton{
-     background-color:#F44322;
+    background-color:#F44322;
     color: #FFFFFF;
     padding: 16px 25px;
     border-radius: 5px;
@@ -266,9 +295,10 @@
     font-weight: bold;
     font-family: Helvetica;
     border: none;
-    width: 350px;
+    width: 387px;
     margin-left: 70px;
     cursor: pointer;
+    margin-left: 12px;
 }
 .dispatchbutton:hover{
     background-color:#F44322 ;
