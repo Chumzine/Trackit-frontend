@@ -7,24 +7,27 @@ section {
 header {
     padding: var(--app-header-padding);
 }
-main {
+.main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-    padding-left: 30px;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 50px;
+    /* padding-left: 30px; */
 }
+
+
 .container {
     background-color: #FBFEF9;
     width: 695px;
     height: 702px;
-    left: 95px;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
 }
 .container h2 {
     font-family: Montserrat;
@@ -33,7 +36,8 @@ main {
     line-height: 28.8px;
     text-align: left;
     color: #310D07;
-    margin-bottom: 130px;
+    margin-bottom: 100px;
+    padding-top: 30px;
 }
 /* .form-input {
     width: 387px;
@@ -47,10 +51,13 @@ main {
 .container input {
     margin-left: 0px;
 }
+form {
+    padding-top: 40px;
+}
 .form-input input {
     width: 387px;
     height: 45px;
-    gap: 8px;
+    gap: 6px;
 
     padding: 16px 8px 16px 8px;
     border-radius: 4px;
@@ -74,7 +81,7 @@ main {
     gap: 5px;
 }
 .check label {
-    padding-top: 8px;
+    padding-top: 9px;
     width: 314px;
     height: 17px;
     color: #000000;
@@ -84,22 +91,19 @@ main {
     color: #F44322;
 }
 .create {
-    width: 180px;
+    width: 200px;
     height: 54px;
-    top: 550px;
-    left: 266px;
     padding: 10px;
-    gap: 10px;
     border-radius: 4px;
     background-color: #F44322;
     border: none;
     color: #FFFFFF;
-    margin-left: 100px;
+    margin-left: 90px;
     cursor: pointer;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
-    line-height: 19.2px;
+    margin-top: -25px;
 }
 .create:hover {
     background-color:rgb(240, 12, 12);
@@ -114,7 +118,4 @@ main {
 .preview {
     width: 434.69px;
     height: 325px;
-    top: 357px;
-    left: 907px;
-    gap: 0px;
 }
