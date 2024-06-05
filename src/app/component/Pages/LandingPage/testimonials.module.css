@@ -1,19 +1,22 @@
 .cardDiv{
-    background-color: #FBF7F0;
-    padding: 50px;
+  background-color: #FBF7F0;  
+  height: 579px;
+  padding: 45px 118px 158px 78px;
      
 }
 
 .cardDiv h6{
-    display: flex;
-    justify-content: center;
-    font-family:" Montserrat" sans-serif;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
+  display: flex;
+  justify-content: center;
+  font-family:" Montserrat" sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 70px;
 }
 .cardContainer{
-    display: flex;
+  display: flex;
+  gap: 20px;
 }
 
 .cardContainer > div {
@@ -24,13 +27,19 @@
   padding: 20px;
   width: 100%;
 }
+.card1, .card2, .card3 {
+  height: 220px;
+}
 
 .cardContainer img {
   max-width: 100%;
   border-radius: 5px;
-  margin-left: 150px;
-  margin-top: 20px;
-  margin-bottom: -20px;
+  margin-left: 122px;
+  margin-top: 25px;
+  margin-bottom: -10px;
+}
+.card2 img, .card3 img {
+  margin-top: 40px;
 }
 
 .description{

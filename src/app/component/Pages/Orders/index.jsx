@@ -59,6 +59,10 @@ export const Orders = () => {
               <img src={EmptyState} alt="Empty box icon" />
               <span>No Orders Placed</span>
             </div>
+            <div className={style.activity}>
+              <img src={EmptyState} alt="Empty box icon" />
+              <span>No orders Placed</span>
+            </div> 
           </div>
         </main>
       </div>

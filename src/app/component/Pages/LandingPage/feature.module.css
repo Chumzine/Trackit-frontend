@@ -1,61 +1,84 @@
-.flexContainers{
-   display: flex;
-   gap: 100px;
-   
-}
 .containerDiv{
     background-color: #fbf7f0;
     width: 100%;
-    padding: 100px;
+    padding: 100px 50px 100px 100px;
     
 }
 .title{
     display: flex;
     justify-content: center;
-    padding: 5px 5px 30px 5px;
-    margin-top: -20px;
+    padding: 5px 5px 30px 10px;
+    margin-top: -50px;
+    margin-bottom: 35px;
 }
-
-
-.groupOne{
-    
+.flexContainers{
     display: flex;
-    padding: 20px 20px 20px 20px;
+    /* gap: 5px; */
+    padding-bottom: 20px;
+ }
+.group{
+    width: 425px;
+    height: 488px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+}
+.groupOne{
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 20px 20px 20px; */
     
 }
-.flexContainer h6{
+.groupa{
+    display: flex;
+    gap: 5px;
+}
+.flexContainer h5{
     margin-top: 4px;
     margin-left: 10px;
     font-family:'Montserrat' sans-serif;
     color: #000;
-    font-size: 20px;
+    font-size: 34px;
     font-weight: 700;
-   
-   
+    text-align: center;
+
 }
 .containerDiv p{
-     font-family:'Montserrat' sans-serif;
-    margin-left: 50px;
+    font-family:'Montserrat' sans-serif;
     margin-top: -50px;
     font-size: 14px;
     font-weight: 200;
     color: #453F3C;
-    padding: 5px;
+    padding: 10px 0 10px;
+
 }
 .image0{
-    height: 500px;
+    height: 450px;
+    width: 500px;
 }
 
 .image1{
-    width: 20px;
+    width: 15px;
     height: 40.06px;
+    margin-right: 10px;
 }
 .image2{
-     width: 30px;
-    height: 30.824px;
+    width: 25px;
+    height: 25.82px;
 }
 .image3{
- width: 24px;
-    height: 40.397px;
+    width: 20px;
+    height: 36.39px;
 }
-
+.swift{
+    margin-top: 10px;
+}
+.cost{
+    margin-top: 5px;
+}
+.real{
+    margin-top: 10px;
+}

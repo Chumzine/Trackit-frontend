@@ -1,32 +1,38 @@
-body{
-  
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.header {
+  padding: var(--app-header-padding);
 }
 .container {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -80px;
+  margin-top: -20px;
   align-items: center;
-  margin-left: 300px;
+  margin-left: 650px;
   background-color: #FBFEF9;
-  width:600px;
-  height: 725px;
+  width: 600px;
+  height: 595px;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
-.heading
-{
-  
+.heading{ 
   color: #490f09;
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 700;
   line-height: 28.8px;
   text-align:center;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
+  margin-top: -130px;
+  padding-top: 50px;
 }
-
+form {
+  margin-top: -60px;
+}
 .formgroup{
   margin-left: 50px;
 }
@@ -69,6 +75,7 @@ input{
     width: 395px;
     border: 1px solid #d2d9e2;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 .forget{
     display: flex;
@@ -83,12 +90,12 @@ input{
   width: 5px;
   margin-right: 10px;
  
- 
 }
 
 .checkboxlabel{
   display: flex;
-  margin-bottom: 14px;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 .style
@@ -111,22 +118,22 @@ button:hover {
   
 }
 .forgotpassword a{
-    color: #f53c1f;
+  color: #f53c1f;
   text-decoration: none;
- 
+  padding-top: 10px;
 }
 .primarybutton {
   margin-top: 50px;
   background-color: #f53c1f;
   color: #fff;
-  width: 180px;
+  width: 200px;
   height: 44px;
   border: none;
   cursor: pointer;
   font-size: 13px;
   font-weight: bold;
   border-radius: 3px;
-  margin-left: 120px;
+  margin-left: 140px;
 }
 
 .primarybutton:hover{
@@ -135,7 +142,7 @@ button:hover {
 }
 .para{
     justify-content: start;
-    margin-top:10px;
+    margin-top:20px;
     margin-left: 100px;
 }
 .para a{

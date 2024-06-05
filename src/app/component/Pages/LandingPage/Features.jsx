@@ -14,45 +14,60 @@ export const Features = () => {
         </div>
         <div className={style.group}>
           <div className={style.groupOne}>
-            <div>
-              <img className={style.image1} src={bolt} alt="Lightening speed" />
-            </div>
+            <div className={style.groupa}>
+              <div>
+                <img className={style.image1} src={bolt} alt="Lightening speed" />
+              </div>
 
+              <div>
+                <h5 className={style.swift}>Swift Delivery</h5>
+              </div>
+            </div><br /><br />
             <div>
-              <h6>Swift Delivery</h6>
+              <p>
+                Packages are delivered quickly and efficiently,
+                <br /> prioritizing speed and reliability.
+            </p>
             </div>
           </div>
-          <p>
-            Packages are delivered quickly and efficiently,
-            <br /> prioritizing speed and reliability.
-          </p>
+          
           <br />
 
           <div className={style.groupOne}>
+            <div className={style.groupa}>
+              <div>
+                <img className={style.image2} src={payments} alt="Cash notes" />
+              </div>
+              <div>
+                <h5 className={style.cost}>Cost Saving</h5>
+              </div>
+            </div><br /><br />
             <div>
-              <img className={style.image2} src={payments} alt="Cash notes" />
-            </div>
-            <div>
-              <h6>Cost Saving</h6>
+              <p>
+                We offer affordable and competitive pricing <br />
+                allowing you to save money.
+              </p> 
             </div>
           </div>
-          <p>
-            We offer affordable and competitive pricing <br />
-            allowing you to save money.
-          </p>
+          
           <br />
 
           <div className={style.groupOne}>
+            <div className={style.groupa}>
+              <div>
+                <img className={style.image3} src={arming_countdown} alt="Security shield" />
+              </div>
+              <div className={style.lastclass}>
+                <h5 className={style.real}>Real time Tracking</h5>
+              </div>
+            </div><br /><br />
             <div>
-              <img className={style.image3} src={arming_countdown} alt="Security shield" />
-            </div>
-            <div className={style.lastclass}>
-              <h6>Real time Tracking</h6>
+              <p>
+                Easily monitor the progress of your delivery in <br /> real time.
+              </p>
             </div>
           </div>
-          <p>
-            Easily monitor the progress of your delivery in <br /> real time.
-          </p>
+          
         </div>
       </div>
     </div>
