@@ -28,9 +28,9 @@ export const Tracking= () => {
           <CustomSideNav />
         </div>
         <div className={style.welcome}>
-          <h4>OrderID#00011</h4>
-          <div>
-            <p>Overview</p>
+  <h4>Order ID <span className={style.orderId}>#00011</span></h4>
+  <div>
+  <p className={style.overview}>Overview</p>
           </div>
           <div>
             <img src={trackingImage} className={style.tracking} alt="A tracking map" />
@@ -49,10 +49,11 @@ export const Tracking= () => {
               <IoIosArrowDown />{" "}
             </div>
           
-            <div>  <p>Stops</p>
+           
+          </div>
+          <div>  <p>Stops</p>
               <img src={locationframe} className={style.frame} alt="Location frame" />
             </div>
-          </div>
         </div>
       </div>
       {/* <div>

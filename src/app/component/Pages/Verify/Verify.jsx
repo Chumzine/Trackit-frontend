@@ -1,9 +1,7 @@
-import style from "./verify.module.css"
-// import { BsArrowLeft } from "react-icons/bs";
-import  CustomButton  from "../../CustomButton/CustomButton";
-import Logo from "../../../assets/images/logo.png"
-
 import React, { useState } from "react";
+import style from "./verify.module.css";
+import CustomButton from "../../CustomButton/CustomButton";
+import Logo from "../../../assets/images/logo.png";
 
 const VerifyWithOTP = () => {
   const [otp, setOtp] = useState("");
@@ -15,8 +13,6 @@ const VerifyWithOTP = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically make a request to your backend to verify the OTP
-    // For the sake of simplicity, let's assume OTP is "1234"
     if (otp === "1234") {
       setVerified(true);
       alert("OTP Verified!");
@@ -26,29 +22,30 @@ const VerifyWithOTP = () => {
   };
 
   return (
-    <div>
+    <div className={style.container}>
       <img src={Logo} alt="trackit logo" />
       <div>
         <div className={style.title}>
           <h1 className={style.heading}>Verify</h1>
           <p className={style.topic}>
-            Verify Please enter the OTP sent to your phone number
+            Please enter the OTP sent to your phone number
           </p>
-          <span className={style.span}>O8123456789</span>
+          <span className={style.span}>08123456789</span>
           <p className={style.paragraph}>Resend OTP Code</p>
         </div>
         {!verified ? (
-          <form onSubmit={handleSubmit}>
-            <label className={style.label}>OTP Code: </label>
-            <input
-              className={style.box}
-              placeholder="Code"
-              type="text"
-              value={otp}
-              onChange={handleChange}
-              maxLength="4"
-            />
-
+          <form onSubmit={handleSubmit} style={{ position: 'relative' }}>
+            <div className={style['otp-container']}>
+              <label className={style.otp}>OTP Code</label>
+              <input
+                className={style.box}
+                placeholder="Code"
+                type="text"
+                value={otp}
+                onChange={handleChange}
+                maxLength="4"
+              />
+            </div>
             <CustomButton className={style.primarybutton}>
               Verify Code
             </CustomButton>
@@ -67,8 +64,3 @@ const VerifyWithOTP = () => {
 };
 
 export default VerifyWithOTP;
-
-
-
-
-

@@ -1,31 +1,29 @@
-import Logo from '../../../assets/images/logo.png';
-import { MainHeader } from '../../MainHeader';
-import { CustomSideNav } from '../../CustomSideNav/CustomSideNavigation';
-import CustomButton from "../../CustomButton/CustomButton";
-import { ReactComponent as DisplayPicIcon } from '../../../assets/icons/display-pic.svg';
 import React, { useState } from 'react';
+import { IoMdNotificationsOutline, IoIosArrowDown } from 'react-icons/io';
+import { CgProfile } from 'react-icons/cg';
+import { ReactComponent as DisplayPicIcon } from '../../../assets/icons/display-pic.svg';
+import { ReactComponent as EditIcon } from '../../../assets/icons/edit.svg';
+import CustomButton from "../../CustomButton/CustomButton";
+import Logo from '../../../assets/images/logo.png';
+import { CustomSideNav } from '../../CustomSideNav/CustomSideNavigation';
 import style from './style.module.css';
 
-
 export const Profile = () => {
-    // Define state to store profile data
     const [profile, setProfile] = useState({
-        fullName: '',
-        email: '',
-        phoneNumber: '',
+        fullName: 'Munirah Subair',
+        email: 'munirahsubair@gmail.com',
+        phoneNumber: '+2348123456789',
     });
 
-      // Event handler to update form fields
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setProfile((prevProfile) => ({
-        ...prevProfile, [name]: value }));
+            ...prevProfile, [name]: value
+        }));
     };
 
-    // Event handler for submission
     const handleSubmit = async (e) => {
         e.preventDefault();
-    // Call API to update profile
         try {
             const response = await fetch('/api/update', {
                 method: 'PUT',
@@ -39,60 +37,89 @@ export const Profile = () => {
                 throw new Error('Failed to update. Please try again later.');
             }
 
-            // Handle successful update
             alert('Update successful!');
 
-
-            // Reset form fields after submission if needed
-            setProfile({
-            firstName: '',
-            email: '',
-            phoneNumber: '',
-            });
-
         } catch (error) {
-            // Handle errors
             alert(error.message);
         }
     }
 
     return (
         <>
-        <header>
-            <img src={Logo} alt="Trackit logo" />
-        </header>
-        <main>
-            <CustomSideNav />
-            <div className={style.content}>
-                <div>
-                    <MainHeader>
-                        <h2>Profile</h2>
-                    </MainHeader>
+            <header className={style.header}>
+                <img src={Logo} alt="Trackit logo" className={style.logo} />
+            </header>
+
+            <div className={style.sideNavContainer}>
+                <CustomSideNav />
+            </div>
+
+            <main className={style.main}>
+                <h2 className={style.profileText}>Profile</h2>
+                <div className={style.profile}>
+                    <div className={style.icon}>
+                        <div className={style.profileIconContainer}>
+                            <CgProfile />
+                        </div>
+                        <h6>Munirah Subair</h6>
+                        <IoIosArrowDown />
+                    </div>
                 </div>
-                <div className={style['form-container']}>
-                    <DisplayPicIcon />
-                    <form onSubmit={handleSubmit}>
-                        <div>
-                            <label htmlFor="Full name">Full name</label><br />
-                            <input type="text" placeholder="Full name" name="name" value={profile.fullName} onChange={handleInputChange} />
-                        </div><br />
-                        <div>
-                            <label htmlFor="Email">Email</label><br />
-                            <input type="text" placeholder="Enter email" name="email" value={profile.email} onChange={handleInputChange} />
-                        </div><br />
-                        <div>
-                            <label htmlFor="Phone number">Phone number</label><br />
-                            <input type="tel" placeholder="Enter phone number" name="phoneNumber" value={profile.phoneNumber} onChange={handleInputChange} />
-                        </div><br />
-                        <div>
-                            <CustomButton className={style.upate}>Update</CustomButton>
-                        </div>  
+                
+                <div className={style.notificationIcon}>
+                    <IoMdNotificationsOutline />
+                </div>
+                
+                <div className={style.formContainer}>
+                    <div className={style.profilePicContainer}>
+                        <DisplayPicIcon className={style.profilePic} />
+                        <div className={style.editIcon}>
+                            <EditIcon />
+                        </div>
+                    </div>
+
+                    <form className={style.form} onSubmit={handleSubmit}>
+                        <div className={style.inputGroup}>
+                            <label htmlFor="fullName">Full Name</label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                value={profile.fullName}
+                                onChange={handleInputChange}
+                            />
+                        </div>
+
+                        <div className={style.inputGroup}>
+                            <label htmlFor="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={profile.email}
+                                onChange={handleInputChange}
+                            />
+                        </div>
+
+                        <div className={style.inputGroup}>
+                            <label htmlFor="phoneNumber">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                value={profile.phoneNumber}
+                                onChange={handleInputChange}
+                            />
+                        </div>
+
+                        <div className={style.buttonGroup}>
+                            <CustomButton type="submit" className={style.updateButton}>
+                                Update
+                            </CustomButton>
+                        </div>
                     </form>
                 </div>
-            </div>
-        </main>
+            </main>
         </>
-    )
-}
-
-
+    );
+};

@@ -1,9 +1,208 @@
 header {
-    padding: var(--app-header-padding);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; 
 }
+
+header img {
+  margin-left: 20px; 
+  max-width: 150px;
+}
+
+.sideNavContainer {
+  position: fixed;
+  left: 0;
+  top: 65px; 
+  bottom: 0;
+  width: 200px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 999; 
+}
+
+.navItem {
+  color: #666666; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.navItem:hover {
+  color: #292D32; 
+}
+
+.supportText {
+  font-size: 24px;
+  font-weight: bold;
+  color: #292D32;
+  text-align: left;
+  margin: 20px 0;
+  padding-bottom: 450px; 
+  padding-left: -350px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  background-color: #f2f2f2;
+  padding-top: 80px;
+  margin-left: 200px; 
+  padding: 10px;
+  min-height: 100vh;
+  box-sizing: border-box; 
+  position: relative; 
+}
+
+.profile {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 0; 
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 45px; 
+  position: absolute;
+  top: 95px; 
+  right: 50px; 
+  border-radius: 50px;
+}
+
+.notificationIcon {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 40px; 
+  height: 40px;
+  position: absolute;
+  top: 95px; 
+  right: 280px; 
+  font-size: 17px;
+  color: #333333;
+  background-color: #E1DCD7; 
+  border-radius: 50%; 
+}
+
+.profile .icon {
+  display: flex;
+  align-items: center;
+}
+
+.profile .profileIconContainer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 30px;
+  height: 30px; 
+  background-color: #E1DCD7;
+  border-radius: 50%;
+}
+
+.profile .icon div {
+  margin: 0 10px;
+  font-size: 18px;
+  color: #666666;
+}
+
+.profile h6 {
+  font-size: 13px;
+  color: #333333;
+  margin: 0 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container {
-    background-color: #FBFEF9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: calc(100% - 200px); 
+  margin-left: -200px; 
+  padding-top: 120px; 
 }
+
 .content-container {
-    background-color: #FBF7F0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  background-color: #FBF7F0;
+  border-radius: 15px;
+  padding: 80px;
+  width: 70%;
+  max-width: 800px; 
+  margin-top: 40px; 
+  margin-right: auto; 
+  margin-left: auto; 
+}
+
+.call, .email, .chat, .socials {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #e0e0e0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+              0 8px 16px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px; 
+  padding: 20px;
+  text-align: left;
+  min-width: 200px; 
+  min-height: 120px; 
+}
+
+.call h5, .email h5, .chat h5, .socials h5 {
+  font-size: 14px; 
+  color: #292D32;
+  margin-bottom: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.call p, .email p, .chat p, .socials p {
+  font-size: 14px; 
+  color: #666666;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.call svg, .email svg, .chat svg, .socials svg {
+  margin-right: 10px;
+  color: #ff6347; 
+}
+
+.call div, .email div, .chat div, .socials div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call .icon, .email .icon, .chat .icon, .socials .icon {
+  margin-right: 15px; 
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr; 
+  }
+  .sideNavContainer {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    position: relative;
+    top: 0;
+  }
+  header, .supportText, .profile, .container {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  header img {
+    margin-left: 0; 
+  }
 }

@@ -81,22 +81,22 @@ export const HomePage = () => {
                 <input />
               </div>
 
-              <div className={style.formtwo}>
-                <h4>Drop off Details</h4>
-                <br />
-                <br />
-                <label>Name</label>
-                <input />
-                <br />
-                <label className={style.label}>address</label>
-                <input />
-                <br />
-                <label className={style.label}>Phone number</label>
-                <input />
-                <br />
-                <label className={style.label}>Package Type</label>
-                <input className={style.label} placeholder="package type" />
-
+          <div className={style.formtwo}>
+            <h4>Drop off Details</h4>
+            <br />
+            <br />
+            <label>Name</label>
+            <input />
+            <br />
+            <label className={style.label}>address</label>
+            <input />
+            <br />
+            <label className={style.label}>Phone number</label>
+            <input />
+            <br />
+            <label className={style.label2}>Package Type</label>
+            <input className={style.label2} placeholder="package type" />
+              
                 <Link to="/signup">
                   <FiPlus /> Add another account
                 </Link>
