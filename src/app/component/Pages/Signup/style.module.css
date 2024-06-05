@@ -11,7 +11,6 @@ header {
     display: flex;
     /* justify-content: center;
     align-items: center; */
-    flex-direction: row;
     gap: 50px;
     margin-left: 50px;
     /* padding-left: 30px; */
