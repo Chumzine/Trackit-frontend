@@ -1,4 +1,6 @@
 import "./App.css";
+import "leaflet/dist/leaflet.css";
+
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import  VerifyWithOTP from "./component/Pages/Verify/Verify";
 import { LandingPage } from "./component/Pages/LandingPage/LandingPage";
@@ -8,8 +10,12 @@ import { Profile } from './component/Pages/ProfileSettings';
 import { Support } from './component/Pages/Support';
 import { HomePage } from "./component/Home/Home";
 import { Orders} from "./component/Pages/Orders/index"
-import {Tracking} from "./component/Pages/Tracking/Tracking"
-import Chatbox from "./component/Pages/Chatbot/index"
+import {Tracking} from "./component/Pages/Tracking/Tracking";
+import Chatbot from "./component/Pages/Chatbot/ChatBot";
+import RiderStatus from "./component/Pages/Tracking/Riderweb1";
+import CancelConfirmation from "./component/Pages/Tracking/Cancelrequest"
+import RiderInfo from "./component/Pages/Tracking/Riderweb2"
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -36,9 +42,14 @@ const router = createBrowserRouter([
     element: <LoginPage />,
   },
   {
-    path: "chatbox",
-    element: <Chatbox/>,
+    path: "chatbot",
+    element: <Chatbot />,
   },
+   {
+    path: "confirm order2",
+    element: <RiderInfo />,
+  },
+
   // {
   //   path: "",
   //   element: (
@@ -48,18 +59,26 @@ const router = createBrowserRouter([
   //   ),
   // },
   {
-    path: 'profile',
-    element: <Profile />
+    path: "profile",
+    element: <Profile />,
   },
   {
-    path: 'support',
-    element: <Support />
+    path: "support",
+    element: <Support />,
   },
   {
-    path: '*',
-    element: <h1 style={{ color: 'black', fontSize: 100}}>404</h1>
-  }
-])
+    path: "confirm order",
+    element: <RiderStatus />,
+  },
+  {
+    path: "cancel request",
+    element: <CancelConfirmation />,
+  },
+  {
+    path: "*",
+    element: <h1 style={{ color: "black", fontSize: 100 }}>404</h1>,
+  },
+]);
 
 
 

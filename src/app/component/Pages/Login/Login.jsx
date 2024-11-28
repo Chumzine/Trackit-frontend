@@ -114,9 +114,9 @@ const LoginPage = () => {
                   onChange={(e) => setRememberMe(e.target.checked)}
                   className={style.checkbox}
                 />
-                Remember Me
+                Remember Me  -''
               </label>
-            </div>
+            </div>x 
             <div className={style.forgotpassword}>
               <Link onClick={handleForgotPassword}>Forgot Password?</Link>
             </div>
